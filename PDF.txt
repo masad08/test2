@@ -1,0 +1,1692 @@
+JMIR MEDICAL INFORMATICS Elangovan et al 
+
+Review 
+
+The Use of Blockchain Technology in the Health Care Sector: 
+Systematic Review 
+
+Deepa Elangovan1, BPharm (Hons); Chiau Soon Long2, BSc; Faizah Safina Bakrin1, PhD; Ching Siang Tan1, PhD; 
+Khang Wen Goh3, PhD; Siang Fei Yeoh4, MClinPharm; Mei Jun Loy5, BEng (Hons); Zahid Hussain6, PhD; Kah Seng 
+Lee7, PhD; Azam Che Idris8, PhD; Long Chiau Ming9, PhD 
+
+1School of Pharmacy, KPJ Healthcare University College, Nilai, Malaysia 
+2Faculty of Computing and Engineering, Quest International University, Ipoh, Malaysia 
+3Faculty of Information Technology, INTI International University, Nilai, Malaysia 
+4Department of Pharmacy, National University Hospital, Singapore, Singapore 
+5Faculty of Engineering, Universiti Teknologi Malaysia, Skudai, Malaysia 
+6Faculty of Health, University of Canberra, Canberra, Australia 
+7Faculty of Pharmacy, University of Cyberjaya, Cyberjaya, Malaysia 
+8Faculty of Integrated Technologies, Universiti Brunei Darussalam, Gadong, Brunei Darussalam 
+9Pengiran Anak Puteri Rashidah Sa’adatul Bolkiah Institute of Health Sciences, Universiti Brunei Darussalam, Gadong, Brunei Darussalam 
+
+Corresponding Author: 
+
+Khang Wen Goh, PhD 
+Faculty of Information Technology 
+INTI International University 
+Persiaran Perdana BBN Putra Nilai 
+Nilai, 71800 
+Malaysia 
+Phone: 60 6 798 2000 
+Email: khangwen.goh@newinti.edu.my 
+
+Abstract 
+
+Background: Blockchain technology is a part of Industry 4.0’s new Internet of Things applications: decentralized systems, 
+distributed ledgers, and immutable and cryptographically secure technology. This technology entails a series of transaction lists 
+with identical copies shared and retained by different groups or parties. One field where blockchain technology has tremendous 
+potential is health care, due to the more patient-centric approach to the health care system as well as blockchain’s ability to connect 
+disparate systems and increase the accuracy of electronic health records. 
+
+Objective: The aim of this study was to systematically review studies on the use of blockchain technology in health care and 
+
+to analyze the characteristics of the studies that have implemented blockchain technology. 
+Methods: This study used a systematic review methodology to find literature related to the implementation aspect of blockchain 
+technology in health care. Relevant papers were searched for using PubMed, SpringerLink, IEEE Xplore, Embase, Scopus, and 
+EBSCOhost. A quality assessment of literature was performed on the 22 selected papers by assessing their trustworthiness and 
+relevance. 
+
+Results: After full screening, 22 papers were included. A table of evidence was constructed, and the results of the selected 
+papers were interpreted. The results of scoring for measuring the quality of the publications were obtained and interpreted. Out 
+of 22 papers, a total of 3 (14%) high-quality papers, 9 (41%) moderate-quality papers, and 10 (45%) low-quality papers were 
+identified. 
+
+Conclusions: Blockchain technology was found to be useful in real health care environments, including for the management 
+of electronic medical records, biomedical research and education, remote patient monitoring, pharmaceutical supply chains, health 
+insurance claims, health data analytics, and other potential areas. The main reasons for the implementation of blockchain technology 
+in the health care sector were identified as data integrity, access control, data logging, data versioning, and nonrepudiation. The 
+findings could help the scientific community to understand the implementation aspect of blockchain technology. The results from 
+this study help in recognizing the accessibility and use of blockchain technology in the health care sector. 
+
+https://medinform.jmir.org/2022/1/e17278 JMIR Med Inform 2022 | vol. 10 | iss. 1 | e17278 | p. 1 
+
+(page number not for citation purposes) 
+
+XSL•FO 
+
+RenderX 
+
+
+JMIR MEDICAL INFORMATICS Elangovan et al 
+(JMIR Med Inform 2022;10(1):e17278) doi: 10.2196/17278 
+
+KEYWORDS 
+
+blockchain; health care; hospital information system; data integrity; access control; data logging; health informatics 
+
+Introduction 
+
+Health informatics (HI) is an extension of medical informatics 
+that concentrates on the clinical sector and implementation of 
+technology in the distribution of health care [1]. Changes in 
+both technology and health care are leading to the evolution of 
+health care informatics. With current technology, HI provides 
+fundamental, indivisible knowledge bases to health professionals 
+and health care organizations to provide patients with a better 
+quality of care services [2]. Acquiring and recording medical 
+and patient information, liaising with health care professionals, 
+choosing an appropriate diagnostic method, elucidating 
+laboratory findings, and gathering clinical research information 
+are known as information processing and communication in the 
+health care sector [3]. 
+
+Electronic health record (EHR) systems and hospital information 
+systems (HISs) are widely used across the world. However, the 
+current HISs are mainly cloud based, are stored by one particular 
+data contractor, and have several disadvantages, such as a lack 
+of sufficient security measures. This has led to innumerable 
+breaches of data, as well as issues of data validity and data 
+sharing, which have left patients exposed to economic threats 
+and possible social stigma. Centralized data or information is 
+an appealing target for cyberattacks, and issues arise due to 
+establishing a persistent view of the patient data across a 
+network [4]. 
+
+Taking these issues into consideration, an improved tamperproof 
+and hackproof database management system is much needed 
+to replace the current system that has been used for the past 
+several decades. The new innovative system should have better 
+data security and be able to integrate with other information 
+technology (IT) systems, such as finance and admission systems. 
+When blockchain technology was introduced in 2008, it largely 
+fulfilled all of these criteria, alongside its versatility for 
+applications in banking and finance. 
+
+Blockchain is a decentralized database that maintains an 
+uninterrupted, growing list of data records that are established 
+by the nodes involved. The information is recorded in a public 
+ledger that includes data from every completed transaction [5]. 
+Along with this, blockchain is also a sort of dispersed ledger of 
+cryptographically chained blocks where value-exchanged 
+transactions are consecutively aggregated. Blockchain also 
+exhibits properties such as decentralization, security, anonymity, 
+and data integrity with the absence of a mediator to control 
+agreement and inalterability [6]. The information in blockchain 
+is transparent and tamperproof due to the continuous series of 
+blocks, which contain information and data [7]. 
+
+Blockchain is a decentralized database that is not owned by 
+anybody and is simultaneously owned by everybody, as the 
+contents are available to all parties involved. For example, with 
+Bitcoin, since all transactions are processed by users via a 
+particular pseudonym, the information contained in the 
+
+blockchain is completely anonymous [8]. This revolutionary 
+system has indeed overcome some of the limitations faced by 
+the existing system. Nevertheless, further exploration in terms 
+of implementation and practicality is much needed and will be 
+discussed in the following sections [9]. 
+
+This study aimed to systematically review studies on the use of 
+blockchain technology in health care. We also analyzed the 
+characteristics of the studies that have implemented blockchain 
+technology. This study will be impactful in helping the scientific 
+community to understand the use aspect of blockchain 
+technology based on the findings of completed studies. The 
+results from this study will help to identify the accessibility as 
+well as the implementation of blockchain technology in the 
+health care sector. 
+
+Methods 
+
+Study Design 
+
+The methodology used in this research was a systematic review, 
+modeled on a recent systematic review about blockchain 
+reported by Böhme et al [7]. 
+
+Data Sources and Search Strategy 
+
+A search was conducted for scientific papers on the research 
+topics. All papers that were relevant for these topics were 
+gathered by using a search protocol that was developed for each 
+scientific database. Possible keywords were tested, and 
+appropriate terms were chosen for the search string. The Medical 
+Subject Headings (MeSH) database was used to derive keywords 
+and search term combinations. PubMed, SpringerLink, IEEE 
+Xplore, Scopus, Embase, and EBSCOhost databases were chosen 
+to search for all the relevant literature. The search strings were 
+constructed in accordance with the research domains and 
+research questions and are listed in Multimedia Appendix 1. 
+
+Online digital libraries were used to search for relevant papers 
+from January 2008 to September 2019. The year 2008 was 
+chosen as the beginning of the range for this research study 
+because the first published application of blockchain technology 
+(ie, Bitcoin) was introduced in that year, so no 
+blockchain-related studies were conducted before 2008. In this 
+systematic review, the search query was purposely made broad, 
+in order to identify many papers related to the research question. 
+However, when “Bitcoin” was used as a search term, a large 
+number of papers were identified, but the papers were mainly 
+about economic applications rather than applications in the 
+health care sector. 
+
+Because the aim of this research was based on finding and 
+mapping the papers related to blockchain technology in the 
+health care sector, “Bitcoin” was dropped as a search term. By 
+using “blockchain” and “health care” as search terms, the 
+majority of Bitcoin-related papers with a technical perspective 
+on blockchain were still included. A manual search was carried 
+
+https://medinform.jmir.org/2022/1/e17278 JMIR Med Inform 2022 | vol. 10 | iss. 1 | e17278 | p. 2 
+
+(page number not for citation purposes) 
+
+XSL•FO 
+
+RenderX 
+
+
+JMIR MEDICAL INFORMATICS 
+
+out for papers that were published at workshops, at conferences, 
+in journals, and at symposiums. 
+
+Study Selection 
+
+Screening of Relevant Papers 
+
+The next step in the process was screening relevant papers, 
+wherein the papers that had been found during the previous step 
+were assessed for actual relevance. The screening process started 
+with all of the publications gathered from online digital libraries. 
+A process inspired by Yli-Huumo et al [10] was used to screen 
+for relevant papers. Applicable quotes from the search were 
+entered into, and sorted with the aid of, EndNote X8.0 
+(Clarivate), which was used to remove duplicate papers. 
+Duplicate references across databases and references that were 
+not appropriate for the study were eliminated from the literature 
+search reference lists. The remaining duplicates were deleted 
+manually. 
+
+The iterative approach for title, abstract, and full-text searches 
+was used, and the results were exported to Microsoft Excel 
+2013. The titles and abstracts of the searched papers were 
+screened first to determine the relevance or appropriateness for 
+this systematic review. At this stage, studies that were clearly 
+not about the use of blockchain technology in health care were 
+excluded. The titles and abstracts were screened by two 
+reviewers based on the inclusion and exclusion criteria. 
+
+Inclusion and Exclusion Criteria 
+
+The papers that had passed the previous screening phase were 
+screened based on their abstract. In addition, the following 
+specific inclusion and exclusion criteria were used to screen 
+each paper: 
+
+1. Inclusion criteria: 
+a. Original research study. 
+b. Study in English. 
+c. Publication on blockchain technology in the health care 
+sector. 
+d. Publication including sufficient explanation of the 
+research findings. 
+2. Exclusion criteria: 
+a. Papers without full-text availability. 
+b. Papers for which English was not the main language. 
+c. Papers that had some other focus instead of the use of 
+blockchain in the health care sector. 
+d. Papers that were duplicates. 
+e. Search results that were editorials, prefaces, paper 
+summaries, summaries of tutorials, interviews, news 
+items, correspondences, discussions, comments, 
+readers’letters, workshops, panels, and poster sessions. 
+f. Publications indicating ideas, magazine publications, 
+and discussion papers. 
+Abstract Screening Based on Keywords 
+
+Screening based on keywords, as defined by Dyba and Dingsøyr 
+[11], was done in two steps. In the first step, identifiable 
+keywords and concepts from the abstracts were analyzed that 
+reflected the contribution of the papers. Developing a greater 
+
+https://medinform.jmir.org/2022/1/e17278 
+
+XSL•FO 
+
+RenderX 
+
+Elangovan et al 
+
+level of understanding based on these keywords was the second 
+step in this keywording process. 
+
+The keywords were used to cluster and form categories. All the 
+selected papers were read after the categories had been clustered. 
+The categories were updated after reading each paper, or if the 
+paper revealed something new, then a new category was created. 
+This step resulted in clustered categories being formed from all 
+the relevant papers based on this research topic. Papers with 
+poor, misleading, or lost abstracts were excluded due to 
+irrelevant information. 
+
+After the title-, abstract-, and keyword-screening process, each 
+remaining paper underwent full-text screening based on the 
+same eligibility criteria. Two reviewers resolved discrepancies 
+through discussion, and no adjudication by a third reviewer was 
+required. 
+
+Data Gathering and Data Extraction 
+
+A template was designed to collect the information required to 
+address the research question. Basic metadata about the 
+publication were collected, such as author name and country, 
+year of publication, source type, and type of publisher. 
+
+To categorize the 22 selected papers, further data were extracted. 
+Each full paper was read to extract the keywords or outcomes 
+related to our research question; these were then sorted into the 
+identified categories, as follows: 
+
+1. Use cases of blockchain technology in health care that 
+indicate the specific health care area, such as electronic 
+medical records (EMRs), biomedical research and 
+education, remote patient monitoring, drug or 
+pharmaceutical supply chains, health insurance claims, 
+health data analytics, or other areas. 
+2. Reasons for using blockchain technology in health care, 
+such as data integrity, access control, logging, data 
+versioning, and nonrepudiation. 
+Literature Quality Assessment 
+
+An assessment of literature quality was performed. All of the 
+final 22 publications were independently reviewed and scored 
+by two reviewers. The assessment tool for blockchain-related 
+studies proposed by Petersen et al [12] was used to critically 
+appraise and summarize evidence in the searched papers. 
+
+In accordance with Hölbl et al [13], the quality of the papers 
+was assessed using the criteria defined in Table 1. 
+
+This tool was used to assess the trustworthiness, relevance, and 
+results of the published papers. These led to the decision of 
+which papers were believable and useful and could be used for 
+the research. A three-tier scale was used to rank the quality of 
+all four questions. A value of 0 (“barely” or “no”) was assigned 
+when the criterion was addressed very poorly or not at all, a 
+value of 1 (“partially”) was assigned when a criterion was 
+partially addressed, and a value of 2 (“satisfactorily” or “yes”) 
+was assigned when the reviewer felt that the publication had 
+successfully satisfied the criterion. 
+
+Two reviewers assessed each query from question 1 (Q1) to 
+question 4 (Q4), which resulted in a minimum of 0 points to a 
+maximum of 4 points per query. The minimum score for the 
+
+JMIR Med Inform 2022 | vol. 10 | iss. 1 | e17278 | p. 3 
+
+(page number not for citation purposes) 
+
+
+JMIR MEDICAL INFORMATICS 
+
+sum of responses to question 2 (Q2), question 3 (Q3), and Q4 
+was 0 points, and the maximum score was 12 points. The score 
+of the response to Q1 was converted to 40% of the total value, 
+and the total summed score of responses to Q2, Q3, and Q4 was 
+converted to 60% of the total value, with Q2, Q3, and Q4 each 
+contributing 20% of the total points. 
+
+So, the overall score was the sum of responses to Q1 to Q4, 
+which is presented as a percentage to enhance readability and 
+comprehension. An explanation of scoring of responses to 
+queries Q1 to Q4 is given in Table 1. 
+
+To find the percentage score of the response to Q1, the following 
+equation applies: 
+
+
+Table 1. Parameters for measuring quality of the publications [13]. 
+Question (Q) Quality assessment query 
+Q1 Is the publication relevant to blockchain? 
+
+Elangovan et al 
+
+To find the percentage score for the sum of responses to Q2 to 
+Q4, the following equation applies: 
+
+
+The overall score is represented by the following equation: 
+Overall score = Percentage score of response to Q1 (%) + 
+Percentage score of sum of responses to Q2 to Q4 (%) [13]. 
+
+From the calculation, the publications that have an overall score 
+of 90% and above are high-quality papers. An overall score 
+between 80% and 89% indicates a moderate-quality paper, and 
+low-quality papers are represented by an overall score of 79% 
+or less. 
+
+
+Responses (scores) 
+
+
+“barely” (0), “partially” (1), or “satisfactorily” (2) 
+
+Q2 Does the publication include and define research objectives adequately? “no” (0), “partially” (1), or “yes” (2) 
+
+Q3 Are limitations and challenges well defined? 
+Q4 Is the proposed contribution well described? 
+
+Data Availability 
+
+All data have been reported in this manuscript. 
+
+Results 
+
+
+Study Selection 
+
+A total of 271 papers were initially retrieved as a result of 
+implementation of the search protocol that was designed for 
+searching the selected scientific databases. Of the 271 papers, 
+34 (12.5%) were from PubMed, 52 (19.2%) were from 
+SpringerLink, 40 (14.8%) were from IEEE Xplore, 56 (20.7%) 
+were from Embase, 45 (16.6%) were from Scopus, and 44 
+(16.2%) were from EBSCOhost. Then, the first screening was 
+done based on the titles of the retrieved papers. All of the paper 
+titles were examined independently by one reviewer based on 
+the inclusion and exclusion criteria, which led to the selection 
+of 175 papers. In the first screening, a total of 52 papers were 
+excluded because they were not related to the research topic 
+(eg, some excluded papers discussed the business perspective 
+of Bitcoin rather than the use of blockchain technology in the 
+health care sector). Meanwhile, 25 papers related to other 
+scientific areas, such as mathematics and chemistry, were 
+excluded from the first screening, as the term “blockchain” had 
+other meanings apart from the technology used in computer 
+science and IT. Through a manual search and using references 
+from the included papers, an additional 10 papers were collected. 
+
+“no” (0), “partially” (1), or “yes” (2) 
+
+“no” (0), “partially” (1), or “yes” (2) 
+
+After the selection of 185 papers from the first screening, 87 
+duplicate papers were removed using Endnote X8. This resulted 
+in 98 papers, which underwent further screening based on 
+abstracts where, in some cases, the introduction and conclusion 
+of the full text were analyzed. The abstracts of all the selected 
+papers were read by two reviewers. Some of the papers were 
+removed because the abstracts indicated no relevance to the 
+research topic. The unclear or grey-area abstracts or papers were 
+moved to the next screening step for more in-depth analysis. 
+
+A total of 35 papers were identified for full-paper analysis, 
+which was the last stage of paper selection for this systematic 
+review. Each paper was read in full, independently, and assessed 
+for eligibility using the inclusion and exclusion criteria. This 
+resulted in the selection of 22 primary papers. Of the 35 papers 
+identified for full-text analysis, 3 (9%) were dropped because 
+they focused on the economic perspective of Bitcoin and not 
+the health care setting. Of the 35 papers, 5 (14%) were removed 
+as they only described blockchain and how it works, without 
+discussing any actual blockchain implementation in a real health 
+care environment. Furthermore, 3 out of 35 (9%) papers 
+identified as review papers and 2 (6%) papers identified as 
+proposal papers were removed. Figure 1 shows the results of 
+the search strategy. The list of 22 selected primary papers and 
+the extracted data items are included in Table 2 [14-35]. The 
+PRISMA (Preferred Reporting Items for Systematic Reviews 
+and Meta-Analyses) checklist for this research study on the use 
+of blockchain technology in the health care sector is included 
+in Multimedia Appendix 2. 
+
+https://medinform.jmir.org/2022/1/e17278 JMIR Med Inform 2022 | vol. 10 | iss. 1 | e17278 | p. 4 
+
+(page number not for citation purposes) 
+
+XSL•FO 
+
+RenderX 
+
+
+JMIR MEDICAL INFORMATICS Elangovan et al 
+
+Figure 1. PRISMA (Preferred Reporting Items for Systematic Reviews and Meta-Analyses) flowchart of the search strategy. 
+
+
+https://medinform.jmir.org/2022/1/e17278 JMIR Med Inform 2022 | vol. 10 | iss. 1 | e17278 | p. 5 
+
+(page number not for citation purposes) 
+
+XSL•FO 
+
+RenderX 
+
+
+JMIR MEDICAL INFORMATICS Elangovan et al 
+Table 2. Information extracted and collected from the selected papers. 
+
+
+Study first Location Use cases and fields Usability and reasons for using blockchain Technology 
+author, year 
+Simplified classi-
+Application area Description fication Description 
+
+
+Maslove, Kingston, Cana-Biomedical re-Development of a system Data integrity Enabling of clinical trials data Ethereum 
+2018 [14] da search and educathat 
+uses a web-based inmanagement; 
+functions allow 
+tion (ie, clinical triterface 
+to allow users to patients to grant researchers 
+als) run trial-related smart access to their data and allow 
+contracts on an Ethereum researchers to submit queries 
+network for data that are stored offchain 
+Cunning-The Nether-Electronic medical A system that uses smart Access control Improvement of the uptake and Ethereum 
+ham, 2017 lands record (EMR) contract–based Ethereum acceptance of medical informat[
+18] blockchain technology to ics platforms where patients 
+operate in a verifiably directly control medical data in 
+secure, trustless, and an open and secure manner 
+openly auditable environment 
+Nugent, London, the Biomedical re-A system that uses smart Data integrity Improvement of data transparen-Ethereum 
+2016 [29] United Kingsearch 
+and educacontracts, 
+which enhance and logging cy in clinical trials and imdom 
+tion (ie, clinical trithe 
+trust in the data and mutable records of trial history, 
+als) clinical trials; this rewhich 
+act as trusted administraduces 
+patient risk and fitors; 
+tamper-resistant characternancial 
+strain in health istics of blockchain prevent all 
+care by allowing betterforms 
+of manipulation; mainly 
+informed decisions to be used for complex clinical trial 
+made by medical profesmanagement 
+sionals 
+Benchoufi, 
+2017 [15] 
+Paris, France Biomedical research 
+and educa-
+A system with timestamping 
+of each pa-
+Nonrepudiation, 
+logging, and data 
+All consent-related data on the 
+blockchain enhance security, 
+N/Aa 
+tion (ie, clinical tritient’s 
+consent using versioning reliability, and transparency 
+als) blockchain technology in and could be a consistent step 
+a securely unfalsifiable toward reproducibility 
+and transparent way 
+Ichikawa, Tokyo, Japan Remote patient Development of a smart-Data integrity Establishment of accessibility Hyperledger 
+2017 [16] monitoring (ie, phone app with and transparency of data with-Fabric 
+mobile health blockchain technology to out the third party by incorpo[
+mHealth]) provide an mHealth sysrating 
+blockchain technology 
+tem for cognitive behavinto 
+mHealth; blockchain also 
+ioral therapy for insomserves 
+as a tamperproof system 
+nia for mHealth 
+Cichosz, Aalborg, Den-EMR (ie, health Development of a plat-Access control Improvement in privacy and NEM 
+2018 [25] mark care data) form using the New and data integrity diabetes data management, 
+Economy Movement where patients have access to 
+(NEM) multi-signature control and share their own data 
+blockchain contracts to 
+access data management, 
+sharing, and encryption 
+Omar, 2019 The United EMR Development of a pa-Data integrity Patients will have overall con-N/A 
+[26] States tient-centric health care trol over their data; Meddata 
+management system iBchain increases patients’ inusing 
+blockchain technolterest 
+in EMRs or electronic 
+ogy as storage, which enhealth 
+records and enhances 
+hances privacy accountability, integrity, 
+pseudonymity, security, and 
+privacy 
+
+
+https://medinform.jmir.org/2022/1/e17278 JMIR Med Inform 2022 | vol. 10 | iss. 1 | e17278 | p. 6 
+
+(page number not for citation purposes) 
+
+XSL•FO 
+
+RenderX 
+
+
+JMIR MEDICAL INFORMATICS Elangovan et al 
+
+
+Study first Location Use cases and fields Usability and reasons for using blockchain Technology 
+author, year 
+Simplified classi-
+Application area Description fication Description 
+
+
+Liang, 2017 Norfolk, Eng-Remote patient Development of an Data integrity, Improvement of personal health Hyperledger 
+[30] land monitoring mHealth care system for access control, data collection, sharing, valida-Fabric 
+personal health data coland 
+logging tion, protection, and integrity 
+lection, sharing, and coland 
+health care collaboration; 
+laboration between indithis 
+system ensures the scalabilviduals, 
+health care ity and efficiency of the data 
+providers, and insurance process by handling a large data 
+companies, and its impleset 
+at low latency 
+mentation in a distributed 
+and trustless way 
+Kleinaki, The Nether-Biomedical re-Presentation and testing Data integrity Improvement of retrieved data Ethereum 
+2018 [28] lands search and educaof 
+the use of smart digital and data versionintegrity, 
+nonrepudiation, and 
+tion (ie, database contracts by a ing biomedical evidence data verqueries) 
+blockchain-based notasioning 
+rization service to seal a 
+biomedical database 
+query using a real 
+blockchain infrastructure 
+Bocek, 2017 Zurich, Switzer-Pharmaceutical Implementation of sensor Logging This system can be evaluated Ethereum 
+[32] land supply chain (ie, devices using blockchain automatically, and the stored 
+ambient temperatechnology 
+to enhance data are tamperproof with 
+ture) data immutability and Ethereum, which can be used 
+public accessibility of at a low cost 
+temperature records 
+Mendes, Évora, Portugal EMR Development of a system Data integrity While consuming low computa-Hyperledger 
+2018 [22] with raw blockchain with tional power, it enhances tam-Fabric 
+Hyperledger Fabric by perproof, fair, and democratic 
+DLA maintenance of the ledger 
+Li, 2018 [20] Beijing, China EMR (ie, health Development of a novel Data integrity Preservation of important data Ethereum 
+record) blockchain-based data in perpetuity and verification 
+preservation system of data originality; illegal operbased 
+on the real-world ation of the data is detected, 
+blockchain-based platand 
+the user is notified on time 
+form, and its implementation 
+for medical data 
+Azaria, 2016 The United EMR (ie, health Development of a decen-Logging and ac-The system becomes more Ethereum 
+[17] States record) tralized record managecess 
+control convenient and adaptable in its 
+ment system using management of authentication, 
+blockchain technology to confidentiality, accountability, 
+handle EMRs and data sharing 
+Zhou, 2018 Beijing, China Health insurance Development of a Data integrity The system provides decentral-Ethereum 
+[33] claims blockchain-based mediand 
+logging ization and tamper resistance; 
+cal insurance storage this gives users high credibility 
+system, MIStore; this and record-nodes, which help 
+helps insurance compausers 
+verify publicly verifiable 
+nies obtain patients’ data 
+medical spending 
+records, which are always 
+confidential 
+Angeletti, Rome, Italy Biomedical re-Presentation of a digital Data integrity The clinical research institute Ethereum 
+2017 [27] search and educahealth 
+application enand 
+access concan 
+be guaranteed that it is action 
+(ie, clinical triabling 
+clinical trials retrol 
+quiring useful and original data; 
+als) cruitment using Internet until an agreement is reached, 
+of Things data; using the individual can keep person-
+Ethereum, a proof of al data private 
+concept was implemented, 
+and the application’s 
+performance was studied 
+in a real-world evaluation 
+
+
+https://medinform.jmir.org/2022/1/e17278 JMIR Med Inform 2022 | vol. 10 | iss. 1 | e17278 | p. 7 
+
+(page number not for citation purposes) 
+
+XSL•FO 
+
+RenderX 
+
+
+JMIR MEDICAL INFORMATICS Elangovan et al 
+
+
+Study first Location Use cases and fields Usability and reasons for using blockchain Technology 
+
+author, year 
+
+Simplified classi-
+Application area Description fication Description 
+
+
+Saravanan, Chennai, India Remote patient Implementation of a new Access control The system aids in data storage Ethereum 
+2017 [31] monitoring health care paradigm for millions of patients, and 
+(SMEADb) to aid diabetic 
+patients via development 
+of an end-to-end 
+analysis was performed in real 
+time, which promotes an evidence-
+based medicine system 
+secured system; implewith 
+privacy and security conmentation 
+of a cerns 
+blockchain-based disruptive 
+technology to facilitate 
+cryptographic security 
+and formalized data 
+access through smart 
+contracts 
+Zhang, 2018 The United EMR (ie, health Development of a system Access control Improvement of security, trust, Ethereum 
+[24] States record) to support collaborative and data integrity and scalable data sharing, 
+clinical decision-making which is important for collabovia 
+a remote tumor board rative clinical decision-making; 
+case study also results in greater data 
+readability 
+Fan, 2018 China EMR (ie, health Development of a Access control Patients can easily access the N/A 
+[19] record) blockchain-based infor-EMRs of different hospitals; 
+mation management sysdata 
+sharing via blockchain 
+tem, MedBlock, to hanhelps 
+the hospital get a full hisdle 
+patients’ information; tory of patients’medical history 
+this allows for efficient before consultations are carried 
+EMR access and reout 
+trieval, exhibiting high 
+information security 
+Liu, 2018 China EMR Implementation of Access control The EMRs cannot be modified N/A 
+[21] blockchain-based privaarbitrarily, 
+which leads to recy-
+preserving data sharduced 
+medical data leakage; 
+ing for EMRs security analysis shows that this 
+system is a secure and effective 
+way to realize data sharing for 
+EMRs 
+Nagasubra-London, the EMR Ensuring secrecy of digi-Access control The system ensures data trans-N/A 
+manian, United Kingtal 
+signatures and authenparency, 
+privacy, confidentiali2018 
+[23] dom tication by using keyless ty, and verification of data 
+signature infrastructure 
+in the system 
+Kotsiuba, Ukraine Health care data Implementation of a de-Data integrity Enhancement of medical data N/A 
+2018 [34] analytics centralized system with safety, extension of the base of 
+blockchain technology clinical data collection, and 
+that protects the confidencreation 
+of an effective shared 
+tiality of medical data; health infrastructure 
+patients receive a personal 
+data monitoring tool, 
+allowing them to participate 
+in accelerating medical 
+analytics 
+Talukder, The United Others Implementation of an Access control Aids in achieving all the com-Ethereum 
+2018 [35] States Ethereum-based Proof of and data integrity plex needs of P6 (participatory, 
+Disease consensus protopersonalized, 
+proactive, prevencol 
+to enhance the accurative, 
+predictive, and precision) 
+cy of transactions and medicine and decreases disease 
+eliminate medical errors burden 
+
+
+aN/A: not applicable: the technology was not reported in this paper. 
+bSMEAD: Secured Mobile-Enabled Assisting Device for Diabetics. 
+
+https://medinform.jmir.org/2022/1/e17278 JMIR Med Inform 2022 | vol. 10 | iss. 1 | e17278 | p. 8 
+
+(page number not for citation purposes) 
+
+XSL•FO 
+
+RenderX 
+
+
+JMIR MEDICAL INFORMATICS 
+
+Publication Year, Publication Type, and Geographical 
+Distribution 
+
+All the selected papers were published since 2016. This indicates 
+that blockchain technology in health care settings is very new. 
+It is noted that from the 22 selected papers, the majority (n=12, 
+55%) were published in 2018, 7 (32%) papers were published 
+in 2017, 2 (9%) papers were published in 2016, and 1 (5%) 
+paper was published in 2019. 
+
+The locations (ie, countries) of the institutions of the authors of 
+the selected primary papers were used to distinguish the 
+geographical distribution of the research community members 
+who were involved in the research. If a paper had authors from 
+different countries, the country of the corresponding author was 
+used. It is noted that the authors, universities, and companies 
+in the United States and China were leading, having 4 (18%) 
+papers each. This was followed by the United Kingdom with 3 
+(14%) papers and the Netherlands with 2 (9%) papers. The rest 
+of the countries, namely Ukraine, India, Italy, Portugal, 
+Switzerland, Denmark, Japan, France, and Canada, contributed 
+1 (5%) paper each. This geographical distribution of the 22 
+selected papers indicates that blockchain technology in the 
+health care sector has gathered research interest around the 
+world. 
+
+The channels where the papers were published determined the 
+publication type. The two publication types included in this 
+systematic review were conferences and journals. The majority 
+(n=15, 68%) of the 22 selected primary papers were published 
+in journals, while 7 (32%) were published as conference 
+proceedings. 
+
+The 22 selected primary papers were studied, and the data or 
+keywords related to this systematic review’s question were 
+extracted. A classification scheme was constructed based on 
+the iterative identification of data, charting keywords extracted 
+from the selected papers. The papers were then sorted into 
+identified categories. 
+
+Each of the selected primary papers addressed one or more 
+different aspects of the use cases of blockchain technology in 
+the health care sector. Therefore, the identified use cases were 
+used to further classify the selected papers. Out of 22 selected 
+papers, 10 (45%) addressed the application of blockchain in the 
+management of EMRs, 5 (23%) addressed the use of blockchain 
+technology in biomedical research and education, and 3 (14%) 
+demonstrated the use of blockchain technology in remote patient 
+monitoring. The remaining papers addressed the use of 
+blockchain technology in drug or pharmaceutical supply chains 
+(n=1, 5%), health insurance claims (n=1, 5%), health data 
+analytics (n=1, 5%), and other applications (n=1, 5%). 
+
+In the selected primary papers, blockchain was implemented in 
+the real health care environment to address several information 
+security components. The use of blockchain technology or the 
+main reason it was implemented in health care was classified. 
+
+Elangovan et al 
+
+From this data, it was noted that each of the selected primary 
+papers addressed one or more reasons, out of a total of 34 
+reasons or benefits, for using blockchain technology in health 
+care. Most papers addressed the application of blockchain in 
+health care for data integrity (14/34, 41%). The next largest 
+purpose of blockchain application was access control, which 
+contributed 11 out of 34 (32%) reasons in the papers. 
+Meanwhile, data logging was addressed 6 (18%) times, data 
+versioning was addressed 2 (6%) times, and nonrepudiation 
+was addressed 1 (3%) time. 
+
+The setting of the studies, specifically the type of hospital used 
+for the implementation of blockchain technology, was analyzed 
+among the 22 selected papers. Only 3 out of 22 (14%) papers 
+gave the name of hospital where the study was carried out. 
+Maslove et al [14] implemented a blockchain-based smart 
+contract at Kingston General Hospital, Canada, to study how 
+blockchain technology could be used in clinical trial data 
+management, which could enhance data integrity. Another study 
+on clinical trials data management was conducted by Benchoufi 
+et al [15] at Hospital Hôtel Dieu, Paris, France, which looked 
+at whether the implementation of blockchain could enhance the 
+transparency and traceability of clinical trial consent, thereby 
+benefitting both patients and researchers. Ichikawa et al [16] 
+conducted their study at the Institute of Neuropsychiatry, Seiwa 
+Hospital, Tokyo, Japan, using blockchain technology to 
+implement a tamper-resistant mobile health (mHealth) system, 
+which could enhance both data transparency and accessibility 
+without the involvement of a third party. 
+
+Information regarding the blockchain platform that was used 
+was gathered from the 22 selected papers. Ethereum was the 
+most commonly used blockchain platform (n=12, 55%), 
+followed by Hyperledger Fabric (n=3, 14%), while the least 
+used platform was the New Economy Movement (NEM) 
+blockchain platform (n=1, 5%). The rest of the studies did not 
+state which blockchain platform was used. 
+
+Literature Quality Analysis 
+
+The final and crucial part of this systematic review involved 
+reviewers scoring the 22 papers to evaluate their quality and 
+the relevance of the blockchain usage. The scoring results are 
+shown in Table 3 [14-35]. These show a greater quality of 
+average overall scores among 15 journal papers (mean score 
+81.0%, SD 5.8%) compared to 7 conference papers (mean score 
+77.1%, SD 5.9%). Out of the 22 papers, 3 (14%) high-quality 
+papers, 9 (41%) moderate-quality papers, and 10 (45%) 
+low-quality papers were identified. It is noted that no published 
+conference papers from January to September 2019 were found 
+or included in this study. 
+
+The 2 (9%) papers published in 2016 each had a relatively high 
+average overall score. In 2017, the average overall score of the 
+papers was 80%, which was slightly lower than that of 2016. 
+This dropped to 78% in 2018 and rose again to 80% in 2019. 
+
+https://medinform.jmir.org/2022/1/e17278 JMIR Med Inform 2022 | vol. 10 | iss. 1 | e17278 | p. 9 
+
+(page number not for citation purposes) 
+
+XSL•FO 
+
+RenderX 
+
+
+JMIR MEDICAL INFORMATICS Elangovan et al 
+
+Table 3. Summary of scores for measuring quality of the publications. 
+
+
+Study first author, year Type of publication Points per question (Q)a Sum of 
+scores for 
+Overall score for 
+Q1-Q4 (%), mean 
+Quality of paperb 
+Q2-Q4 (SD) 
+Q1 Q2 Q3 Q4 
+
+
+Maslove, 2018 [14] Journal 4 3 3 4 10 90.0 (0.5) High 
+Benchoufi, 2017 [15] Journal 4 3 2 3 8 80.0 (0.7) Moderate 
+Ichikawa, 2017 [16] Conference proceeding 4 4 2 3 9 85.0 (0.8) Moderate 
+Azaria, 2016 [17] Journal 4 3 2 3 8 80.0 (0.7) Moderate 
+Cunningham, 2017 [18] Journal 4 3 2 4 9 85.0 (0.8) Moderate 
+Fan, 2018 [19] Journal 4 3 1 3 7 75.0 (1.1) Low 
+Li, 2018 [20] Conference proceeding 4 3 2 4 9 85.0 (0.8) Moderate 
+Liu, 2018 [21] Journal 4 3 2 2 7 75.0 (0.8) Low 
+Mendes, 2018 [22] Journal 4 3 1 3 7 75.0 (1.1) Low 
+Nagasubramanian, 2018 [23] Journal 4 3 2 3 8 80.0 (0.7) Moderate 
+Zhang, 2018 [24] Journal 4 3 1 3 7 75.0 (1.1) Low 
+Cichosz, 2018 [25] Journal 4 4 2 3 9 85.0 (0.8) Moderate 
+Omar, 2019 [26] Conference proceeding 4 3 1 3 7 75.0 (1.1) Low 
+Angeletti, 2017 [27] Journal 4 4 2 4 10 90.0 (0.9) High 
+Kleinaki, 2018 [28] Journal 4 3 1 3 7 75.0 (1.1) Low 
+Nugent, 2016 [29] Journal 4 4 2 4 10 90.0 (0.9) High 
+Liang, 2017 [30] Conference proceeding 4 3 1 3 7 75.0 (1.1) Low 
+Saravanan, 2017 [31] Journal 4 3 1 3 7 75.0 (1.1) Low 
+Bocek, 2017 [32] Journal 4 4 1 4 9 85.0 (1.3) Moderate 
+Zhou, 2018 [33] Conference proceeding 4 4 1 3 8 80.0 (1.2) Moderate 
+Kotsiuba, 2018 [34] Conference proceeding 4 3 1 2 6 70.0 (1.1) Low 
+Talukder, 2018 [35] Conference proceeding 4 3 0 3 6 70.0 (1.5) Low 
+
+
+aTwo reviewers assessed each query from Q1 to Q4, based on a 5-point ordinal scale ranging from 0 to 4, where 0 indicates the lowest level (criterion 
+
+was addressed very poorly or not at all) and 4 indicates the highest level (criterion was exceptional). 
+bAn overall score of ≥90% indicates a high-quality paper; an overall score of 80%-89% indicates a moderate-quality paper; an overall score ≤79% 
+indicates a low-quality paper. 
+
+Discussion 
+
+Identified Themes 
+
+The identified themes are summarized in Figure 2. 
+
+https://medinform.jmir.org/2022/1/e17278 JMIR Med Inform 2022 | vol. 10 | iss. 1 | e17278 | p. 10 
+
+(page number not for citation purposes) 
+
+XSL•FO 
+
+RenderX 
+
+
+JMIR MEDICAL INFORMATICS Elangovan et al 
+
+Figure 2. The uses of blockchain technology in the health care sector. 
+
+
+The Use of Blockchain Technology in Real Health Care 
+Environments 
+
+The results from this systematic review show that the majority 
+of the research regarding blockchain technology in health care 
+environments was focused on the management of EMRs, 
+followed by biomedical research and education, remote patient 
+monitoring, pharmaceutical supply chains, health insurance 
+claims, health data analytics, and other potential areas. 
+
+Electronic Medical Records 
+
+Out of 22 selected papers, 10 (45%) concentrated on the 
+management of EMRs. EMRs, similar to EHRs or personal 
+health records, involve electronic modeling, storage, and 
+management of patients’ personal, medical, or health-related 
+data. Traditionally, different systems have been used to store 
+patients’ records separately across different service providers, 
+where the service providers have control over the records, which 
+may limit data sharing with other health care stakeholders. 
+
+The application of blockchain in the management of EHRs will 
+make data sharing among health care stakeholders easier, more 
+transparent, and more trustworthy, and patients will have control 
+over their own data. This is because the characteristics of 
+blockchain technology, such as decentralization, immutability, 
+data provenance, reliability, robustness, smart contracts, security, 
+and privacy, make it suitable for the management and storage 
+of patient EHRs [18]. 
+
+Azaria et al [17] presented MedRec, which is a project from the 
+MIT (Massachusetts Institute of Technology) Media Lab and 
+Beth Israel Deaconess Medical Center that uses a 
+blockchain-based platform to give patients access to their own 
+data through some access permissions built into the blockchain. 
+The patient may decide to grant access to their EHRs to any 
+third party, which may reduce their paperwork, given that 
+patients normally have to carry a bundle of papers with them 
+when they seek out different health care providers for 
+
+https://medinform.jmir.org/2022/1/e17278 
+
+XSL•FO 
+
+RenderX 
+
+consultation. With blockchain technology, regardless of the 
+time and institution, health care providers can easily gain access 
+to all of a patient’s medical data. Patients become more 
+committed to their own health care because they are directly 
+involved in the management of their health records through 
+blockchain technology. 
+
+The second application that would integrate EMRs is 
+blockchain-based privacy-preserving data sharing (BPDS), 
+which was developed by Liu et al [21]. This uses the Ethereum 
+blockchain platform, which reduces the risk of medical data 
+leakage and secures data sharing in health care. 
+
+Fan et al [19] developed MedBlock, a blockchain-based 
+information management system that is implemented in health 
+care to enhance efficiency and secure electronic medical data 
+sharing using blockchain. Another blockchain-based EMR is 
+FHIRChain [24], which encapsulates the Health Level Seven 
+Fast Healthcare Interoperability Resources (FHIR) standard for 
+shared clinical data. Zhang et al [24] used blockchain technology 
+via the FHIRChain-based decentralized app to share clinical 
+data that focused on health care record management and digital 
+health identities to verify participants for remote cancer care in 
+a case study of collaborative decision-making [24]. Cichosz et 
+al [25] proposed NEM multi-signature blockchain contracts to 
+be used for the management and sharing of medical data of 
+diabetes patients, which aimed to achieve access control and 
+data privacy. 
+
+Li et al [20] presented a medical data preservation system based 
+on the real-world blockchain platform Ethereum, which provides 
+a trustworthy storage solution to ensure the primitiveness and 
+verifiability of stored data. Mendes et al [22] presented a Smart 
+Ambient Assisted Living environment, which uses blockchain 
+technology to enhance data privacy and cognitive security in 
+the health care sector. As noted above, out of the 22 included 
+papers, 3 (14%) were high-quality papers, 9 (41%) were 
+moderate-quality papers, and 10 (45%) were low-quality papers. 
+
+JMIR Med Inform 2022 | vol. 10 | iss. 1 | e17278 | p. 11 
+
+(page number not for citation purposes) 
+
+
+JMIR MEDICAL INFORMATICS 
+
+Therefore, the conclusions made are convincing based on the 
+high or moderate quality of a high percentage of papers. 
+
+Biomedical Research and Education: Clinical Research 
+
+A total of 23% (5/22) of the selected papers in this study 
+indicated that blockchain could be applied in biomedical 
+research and education fields. Blockchain technology has been 
+used extensively in biomedical research and education to 
+preserve data privacy, integrity, sharing, record sharing, and 
+record keeping, especially in clinical trials [23]. Nugent et al 
+
+[29] presented blockchain smart contracts that prevent 
+falsification of data and underreporting of unwanted results of 
+clinical research, which enhances trust in the data and clinical 
+trials. 
+Angeletti et al [27] proposed a proof-of-concept implementation 
+of consent traceability in clinical trials using Ethereum to secure 
+and ensure unfalsifiable data. Every piece of data or consent 
+included in the blockchain system is time-stamped and publicly 
+transparent. This is achieved through cryptographic validation. 
+All plans, consent, protocols, and possible outcomes can be 
+stored on blockchain even before the inception of clinical trials, 
+which prevents any corruption and undesirable study results. 
+
+Kleinaki et al [28] presented a blockchain-based notarization 
+service that uses smart contracts to seal biomedical database 
+queries and the respective results, which ensures data 
+transparency. Maslove et al [14] proposed BlockTrial, a 
+web-based interface system that allow users to run trial-related 
+smart contracts on the Ethereum network in clinical data 
+management, thereby enhancing the reliability and transparency 
+of complex data in clinical trials. The tamperproof characteristics 
+of blockchain prevents the manipulation of data in clinical trials. 
+
+Remote Patient Monitoring 
+
+Remote patient monitoring was another blockchain use case in 
+the health care sector. Generally, remote patient monitoring 
+includes the gathering of biomedical data from the body and 
+mobile devices to enable the monitoring of patient status 
+remotely outside of traditional health care environments, such 
+as hospitals. 
+
+Liang et al [30] presented a Hyperledger-based implementation 
+of blockchain in mHealth that enables data collection and 
+sharing between health care stakeholders, ensuring both data 
+transparency and accessibility. Saravanan et al [31] proposed 
+an end-to-end secured system, a new health care paradigm (ie, 
+Secured Mobile-Enabled Assisting Device for Diabetics), 
+through smart contracts to facilitate cryptographic security and 
+formalized data access in which to monitor diabetes patients. 
+The author stated that blockchain was engaged in a 
+mobile-enabled assisting device that was developed to monitor 
+diabetes patients. Ichikawa et al [16] presented a tamper-resistant 
+mHealth system using blockchain technology where a mobile 
+device is used to gather EMRs, which are then sent to the 
+blockchain-based Hyperledger Fabric network to ensure secure 
+management of the data. 
+
+Cichosz et al [25] proposed NEM multi-signature blockchain 
+contracts for assisting diabetes patients in monitoring and 
+transmitting their vital parameters or data by sensor device to 
+
+https://medinform.jmir.org/2022/1/e17278 
+
+XSL•FO 
+
+RenderX 
+
+Elangovan et al 
+
+a blockchain-based platform where the data are collected, stored, 
+and analyzed. In emergency cases, such as abnormal blood 
+glucose levels or missing dosages, an alert via a social network, 
+such as Facebook or WhatsApp, will be sent to the care provider. 
+The data can be communicated continuously by using mobile 
+devices as a gateway with blockchain technology, which could 
+save patients from any untoward consequences. 
+
+Drug or Pharmaceutical Supply Chains 
+
+Drug or pharmaceutical supply chains are one of the use cases 
+of blockchain technology in the health care sector, particularly 
+health-related supply chain management. Drug or 
+pharmaceutical supply chains involve the introduction of new 
+drugs into the market, ensuring the safety and validity of medical 
+products sold to end customers [32]. Blockchain has been 
+applied in this field to allocate a safe and secure platform and 
+to address the most common problems faced in the 
+pharmaceutical industry, such as delivery of substandard or 
+counterfeit medication, which may have a negative impact on 
+patients. 
+
+In this systematic review, only 1 paper out of 22 (5%) presented 
+the implementation of a blockchain-based application for 
+pharmaceutical supply chain management. Bocek et al [32] 
+presented a real-world demonstration and evaluation of 
+blockchain technology in the pharmaceutical supply chain, 
+where ambient temperature sensors with blockchain technology 
+were used to record temperatures at which drugs were stored 
+and transported; such temperature measurements were 
+immutably kept in a public blockchain for transparent inspection, 
+which could also decrease the operational cost in a 
+pharmaceutical supply chain. 
+
+Health Insurance Claims 
+
+Health insurance is necessary for everyone to get affordable 
+medical treatment. Blockchain’s characteristics, such as 
+immutability, decentralization, transparency, and auditability 
+of records, can benefit the process of health insurance claims 
+in the health care sector. Nevertheless, only 1 paper from the 
+22 (5%) selected primary papers focused on this application. 
+Zhou et al [33] developed a blockchain-based medical insurance 
+storage system that is displayed using the Ethereum blockchain 
+platform. The medical insurance data of a patient can be 
+encrypted and immutably stored on blockchain, which enhances 
+credibility and eliminates the involvement of third parties in 
+the management of patients’ health insurance [33]. 
+
+Health Data Analytics 
+
+Only 1 paper out of 22 (5%) presented the use of blockchain 
+technology in health data analytics. Blockchain in collaboration 
+with other emerging technologies, such as deep-and 
+transfer-learning techniques, was used to identify predictive 
+analytics of health care data. Kotsiuba et al [34] stated that 
+blockchain provides a unique opportunity to overcome the 
+problems related to the analysis and security of medical data. 
+Using blockchain technology, a decentralized health data 
+ecosystem was presented that protected medical data 
+confidentiality, produced an effective shared health 
+infrastructure, and increased the basis of clinical data collection. 
+
+JMIR Med Inform 2022 | vol. 10 | iss. 1 | e17278 | p. 12 
+
+(page number not for citation purposes) 
+
+
+JMIR MEDICAL INFORMATICS 
+
+Other Functionalities 
+
+Of the 22 selected primary papers, 1 (5%) study by Talukder et 
+al [35] included the relevant research perspective but could not 
+be classified under any of the identified uses of blockchain. 
+This study presented a blockchain consensus protocol that 
+provides accurate medical decisions and reduces the disease 
+burden by using Ethereum, based on the proof-of-disease 
+consensus protocol. All functionalities of health data 
+interoperability, including EMRs, patient health records, and 
+health information exchange databases, can be achieved by this 
+system. 
+
+Reasons for the Application of Blockchain Technology 
+in the Current Health Care System 
+
+Overview 
+
+The main reasons (N=34) for the application or implementation 
+of blockchain technology in the health care sector in this study’s 
+selected papers were identified and categorized into the 
+following groups: data integrity (n=14, 41%), access control 
+(n=11, 32%), data logging (n=6, 18%), data versioning (n=2, 
+6%), and nonrepudiation (n=1, 3%). 
+
+Data Integrity 
+
+Data integrity is defined as the accuracy and consistency of the 
+data or information stored in a system, which acts as an 
+important component of information security. Data integrity 
+was achieved by using blockchain technology in the health care 
+sector. Li et al [20] implemented the blockchain-based platform 
+Ethereum to maintain the originality and variability of stored 
+data in the system while preserving user privacy. The lifelong 
+maintenance of data in blockchain was achieved with the 
+proof-of-primitiveness data concept, and the system can validate 
+the data where it is identical to the original data. The data can 
+be restored and verified through blockchain if it has been 
+damaged. 
+
+Kotsiuba et al [34] also presented a decentralized health data 
+system using blockchain that secures the collection and 
+confidentially of medical or clinical data. In the study by Zhang 
+et al [24], data integrity was enhanced by using an 
+FHIRChain-based decentralized app, which used blockchain 
+technology and digital health identities in remote cancer care 
+to validate the participants in a case study of clinical data 
+sharing. With the application of public key cryptography, this 
+decentralized app improves the trust of participants and enables 
+the users to share specific and structured pieces of information, 
+rather than an entire document. Thereby, it increases the 
+readability of data and flexibility of sharing options. 
+
+Cichosz et al [25] implemented a blockchain-based platform to 
+enhance the management and sharing of diabetes data in an easy 
+and secure way, which can be achieved by a decentralization 
+of blockchain. According to a study by Omar et al [26], the 
+integrity, security, privacy, and accountability of data in health 
+care are achieved through a privacy-preserving platform using 
+blockchain technology. To ensure encryption of patient data 
+and pseudonymity, a cryptographic function was used. The 
+decentralization of data enabled by the peer-to-peer network in 
+
+https://medinform.jmir.org/2022/1/e17278 
+
+XSL•FO 
+
+RenderX 
+
+Elangovan et al 
+
+blockchain technology helps to reduce cyberattacks and preserve 
+the health care data set. 
+
+The proof-of-concept implementation of patient-facing and 
+researcher-facing systems using blockchain technology to 
+enhance data integrity was demonstrated by Maslove et al [14] 
+and Angeletti et al [27]. Maslove et al [14] demonstrated that 
+the proof-of-concept implementation using blockchain 
+technology in clinical trials secures original personal data, and 
+this data would not be shared publicly before an agreement is 
+reached. In regard to the use of blockchain technology in clinical 
+trials, the clinical research institute can also guarantee that the 
+data obtained are authentic and useful. 
+
+Angeletti et al [27] stated that the integrity of the data collected 
+in clinical trials was enhanced by the application of blockchain 
+technology, specifically blockchain-based smart contracts, which 
+act as the foundation to promote trust throughout clinical 
+research. The proof-of-concept implementation in clinical 
+research enhances the interaction of researchers and patients. 
+
+Blockchain in digital health technologies has also been 
+particularly used in mHealth, which includes remote patient 
+monitoring to ensure the safe and precise preservation of medical 
+information to improve data integrity. Ichikawa et al [16] 
+concluded from their study that the usage of blockchain 
+technology in mHealth improves data transparency and 
+accessibility without the involvement of third parties, due to 
+the tamperproof and decentralized characteristics of blockchain 
+technology. 
+
+Access Control 
+
+According to Azaria et al [17], access control is defined as an 
+individual having full authority in deciding who can access their 
+medical data, as well as when and how much of their own 
+medical data can be accessed using blockchain technology. 
+Access control may lead to patients’ direct involvement in 
+controlling their own medical data usage. The distributed ledger, 
+which is one of the characteristics of blockchain technology, 
+ensures efficient access and retrieval of EMRs [18]. 
+
+Fan et al [19] used a proof of concept with an application 
+programming interface using blockchain technology, which 
+allows a permission system where each patient is able to view, 
+control, and specify who can access their records. 
+
+A study by Cunningham and Ainsworth [18] found that the 
+EMRs that included a patient’s full medical history from many 
+different hospitals could be easily accessed by the patient using 
+a blockchain-based information management system, which 
+enhances the outcome of treatment by avoiding the segregation 
+of medical data from different hospitals. An access protocol 
+was implemented that prevented unauthorized users from 
+obtaining any sensitive data or information. 
+
+For access control and the preservation of data, Fan et al [19] 
+used the blockchain-based platform concept with NEM 
+multi-signature blockchain contracts, which ensured privacy 
+control of health data. With this concept, patients are in control 
+of their own data and have the power to decide who can access 
+their personal data. For instance, an older adult patient could 
+share access of their medical data with their adult child. 
+
+JMIR Med Inform 2022 | vol. 10 | iss. 1 | e17278 | p. 13 
+
+(page number not for citation purposes) 
+
+
+JMIR MEDICAL INFORMATICS 
+
+According to Cichosz et al [25], patients were able to access 
+their own medical data through smart blockchain contracts, 
+which may lead to secure data sharing. Through BPDS, which 
+consists of data access permission implemented by Liu et al 
+[21], patients have full control over their medical records or 
+data, without jeopardizing their privacy. Furthermore, a user 
+can use patient data with permission from the patient. The owner 
+of the data in blockchain is capable of revoking his or her access 
+permission, in case of a violation of access rules. 
+
+According to Liu et al [21], health records that are centrally 
+stored are more vulnerable to cyberattacks. Therefore, 
+Nagasubramanian et al [23] presented a keyless signature 
+infrastructure (KSI) blockchain technology for securing EHRs 
+that ensures authentication and integrity of health records. In a 
+KSI blockchain system, the signed data are stored and can be 
+operated without a network connection, and no third parties are 
+required to preserve data in this system. 
+
+Data access by health care professionals can be achieved through 
+smart contracts of blockchain technology with cryptographic 
+security. Using blockchain technology, Saravanan et al [31] 
+implemented a mobile-based secure health care system that can 
+predict a patient’s diabetes status in real time. In case of 
+emergency, the doctor can access a patient’s health record and 
+prescribe them with a suitable medication dosage using this 
+technology system. This blockchain system is used to store data 
+related to health care and securely connect with third parties. 
+
+Data Logging 
+
+Data logging is defined as an operation of gathering and storing 
+information over a period of time. It allows tracking of all types 
+of interactions, such as storage, access, or modification of data, 
+files, or applications in a system. Data logging can be achieved 
+by the application of blockchain technology in the health care 
+sector. 
+
+In clinical trials, Nugent et al [29] demonstrated blockchain 
+technology using an Ethereum smart contract to enhance the 
+trustworthiness, reliability, and transparency of data 
+management. The cryptographic and tamperproof characteristics 
+of blockchain prevent all forms of manipulation and enhance 
+the data logging of complex clinical trial data management, so 
+more informed decisions can be made by medical professionals. 
+An mHealth care system using blockchain technology was 
+implemented by Liang et al [30] that ensured gathering, sharing, 
+and collaboration of data between the health care providers and 
+individuals in a secure way. 
+
+Bocek et al [32] stated in their study that the application of 
+blockchain technology in pharmaceutical supply chain 
+management ensures data logging. They demonstrated the use 
+of an Internet of Things sensor device (modum.io AG) that uses 
+blockchain technology to ensure the verification of compliance 
+with quality control temperature requirements. This device was 
+used to monitor and store the temperature of products, enhance 
+data immutability, and facilitate public accessibility of 
+temperature records of pharmaceutical products, especially 
+during transportation. Data provenance was ensured using 
+blockchain technology that can prove the origin of products in 
+a supply chain. 
+
+https://medinform.jmir.org/2022/1/e17278 
+
+XSL•FO 
+
+RenderX 
+
+Elangovan et al 
+
+Zhou et al [33] stated that blockchain technology acts as a 
+tamperproof and decentralized technology to record data, which 
+enhances users’ trust in a health insurance system, especially 
+with the implementation of a blockchain-based medical 
+insurance storage system. For instance, the data about each 
+patient’s spending was stored and secured in the blockchain by 
+the hospital, which helped the insurance company obtain 
+information about the total amount of spending by the patient; 
+however, third parties, including the insurance company, cannot 
+modify or delete the data and do not have the authority to access 
+a patient’s personal medical data. 
+
+Data Versioning 
+
+Data versioning is defined as saving new copies of the data 
+when any modification is made to the existing data. This helps 
+to keep track of the data and ensure easy retrieval of any specific 
+version of the respective stored data in a system. Kleinaki et al 
+
+[28] implemented a blockchain-based notarization service that 
+uses smart digital contracts to secure data in the biomedical 
+research sector. A study by Mendes et al [22] showed that after 
+the retrieval process, retrieved data cannot be modified, which 
+ensures the integrity and nonrepudiation of the data. Using 
+blockchain technology, data versioning was achieved where 
+medical evidence of different versions of data retrieved from a 
+biomedical database were securely stored and saved, along with 
+content that is continually updated. In this study, this was mostly 
+used for decision support in the health care sector. 
+Nonrepudiation 
+
+Nonrepudiation guarantees the validity of data in a particular 
+health care system, which cannot not be denied by anyone and 
+ensures the originality and integrity of data. A study by Angeletti 
+et al [27] used blockchain technology to collect, store, and track 
+clinical trial consent in a secure, unfalsifiable, and publicly 
+verifiable way; this consent was originally time-stamped with 
+the application of proof of concept, leading to the nonrepudiation 
+of data. The authentication system ensures that the clinical trial 
+consent is accessible and transparent for patients, while traceable 
+for stakeholders. A single document in open format was used 
+and accounted for the whole time-stamped consent collection 
+process. This document cannot be corrupted and is considered 
+a robust proof of data. 
+
+Study Limitations 
+
+One limitation of this systematic review study was that there 
+were no published studies on the safety of blockchain technology 
+in health care, so the safety aspect of blockchain technology 
+cannot be reviewed. In addition, there were few papers published 
+on the negative aspects of implementation of blockchain 
+technology in health care. Most studies only published the 
+positive aspects, which may have led to bias. 
+
+Future Directions 
+
+Blockchain technology is still a new technology that has not 
+been widely implemented in the health care sector. This study 
+can be a guide for future research, implementation, and 
+evaluation of blockchain technology in this sector. More 
+research should be carried out regarding the implementation of 
+blockchain technology in real health care environments for 
+better understanding, characterization, and evaluation. 
+
+JMIR Med Inform 2022 | vol. 10 | iss. 1 | e17278 | p. 14 
+
+(page number not for citation purposes) 
+
+
+JMIR MEDICAL INFORMATICS 
+
+Researchers should also focus on carrying out research on the 
+safety of implementing blockchain technology in health care. 
+
+Conclusions 
+
+This systematic review has presented an overview of the use 
+and characteristics of blockchain technology in the health care 
+sector. The findings show that blockchain technology research 
+and application in the health care sector is still in its infancy 
+but growing rapidly. Blockchain technology has started to 
+develop from cryptocurrencies, such as Bitcoin, into various 
+
+Elangovan et al 
+
+general-purpose technologies in many industries, including 
+health care. According to the selected papers in this study, 
+EMRs, biomedical research and education, remote patient 
+monitoring, drug or pharmaceutical supply chains, health 
+insurance claims, and health data analytics are the most common 
+uses of blockchain technology in health care. The main reasons 
+for the application of blockchain technology are to enhance data 
+
+integrity, access control, logging, data versioning, and 
+nonrepudiation of patient health records or other health 
+information in health care settings. 
+
+Authors' Contributions 
+
+DE, LCM, CSL, FSB, and CST contributed to the study design, data extraction, quality assessment, analysis and interpretation 
+of data, and drafting of the manuscript. KWG and SFY contributed to the study design, quality assessment, analysis and 
+interpretation of data, and revision of the paper. KSL, ZH, ACI, and MJL contributed to the study design, data extraction, and 
+analysis and interpretation of data. All authors proofread and approved the submitted version of the paper. The paper contents 
+have not been previously presented elsewhere. All authors have read and approved this manuscript for publication and report no 
+financial disclosures. 
+
+Conflicts of Interest 
+
+None declared. 
+
+Multimedia Appendix 1 
+
+Databases and search terms used. 
+[DOCX File , 14 KB-Multimedia Appendix 1] 
+
+Multimedia Appendix 2 
+
+PRISMA (Preferred Reporting Items for Systematic Reviews and Meta-Analyses) checklist for the systematic review of the use 
+of blockchain technology in the health care sector. 
+[DOCX File , 29 KB-Multimedia Appendix 2] 
+
+References 
+
+1. Norris AC. Current trends and challenges in health informatics. Health Informatics J 2016 Jul 25;8(4):205-213. [doi: 
+10.1177/146045820200800407] 
+2. Nguyen Q, Naguib R, Ghani MA, Bali R, Marshall I, Phuong N, et al. An analysis of the healthcare informatics and systems 
+in Southeast Asia: A current perspective from seven countries. Int J Electron Healthc 2008;4(2):184. [doi: 
+10.1504/ijeh.2008.019792] 
+3. Georgiou A. Health informatics and evidence-based medicine -More than a marriage of convenience? Health Informatics 
+J 2016 Sep 14;7(3-4):127-130. [doi: 10.1177/146045820100700303] 
+4. Ismail NI, Abdullah NH, Shamsuddin A. Adoption of hospital information system (HIS) in Malaysian public hospitals. 
+Procedia Soc Behav Sci 2015 Jan;172:336-343. [doi: 10.1016/j.sbspro.2015.01.373] 
+5. Peterson K, Deeduvanu R, Kanjamala P, Boles K. A blockchain-based approach to health information exchange networks. 
+HealthIT.gov. 2016. URL: https://www.healthit.gov/sites/default/files/12-55-blockchain-based-approach-final.pdf [accessed 
+2019-08-08] 
+6. Zhang P, White J, Schmidt DC, Lenz G. Applying software patterns to address interoperability challenges in blockchain-based 
+healthcare apps. ArXiv Preprint posted online on June 5, 2017 [FREE Full text] 
+7. Böhme R, Christin N, Edelman B, Moore T. Bitcoin: Economics, technology, and governance. J Econ Perspect 2015 May 
+01;29(2):213-238. [doi: 10.1257/jep.29.2.213] 
+8. Dwyer GP. The economics of Bitcoin and similar private digital currencies. J Financ Stab 2015 Apr;17:81-91. [doi: 
+10.1016/j.jfs.2014.11.006] 
+9. Mettler M. Blockchain technology in healthcare: The revolution starts here. In: Proceedings of the 18th International 
+Conference on e-Health Networking, Applications and Services. 2016 Presented at: 18th International Conference on 
+e-Health Networking, Applications and Services; Sepember 14-17, 2016; Munich, Germany. [doi: 
+10.1109/healthcom.2016.7749510] 
+10. Yli-Huumo J, Ko D, Choi S, Park S, Smolander K. Where is current research on blockchain technology?—A systematic 
+review. PLoS One 2016;11(10):e0163477 [FREE Full text] [doi: 10.1371/journal.pone.0163477] [Medline: 27695049] 
+https://medinform.jmir.org/2022/1/e17278 JMIR Med Inform 2022 | vol. 10 | iss. 1 | e17278 | p. 15 
+
+(page number not for citation purposes) 
+
+XSL•FO 
+
+RenderX 
+
+
+JMIR MEDICAL INFORMATICS Elangovan et al 
+
+11. Dybå 
+T, Dingsøyr T. Empirical studies of agile software development: A systematic review. Inf Softw Technol 2008 
+Aug;50(9-10):833-859. [doi: 10.1016/j.infsof.2008.01.006] 
+12. Petersen K, Feldt R, Mujtaba S, Mattsson M. Systematic mapping studies in software engineering. In: Proceedings of the 
+12th International Conference on Evaluation and Assessment in Software Engineering. 2008 Presented at: 12th International 
+Conference on Evaluation and Assessment in Software Engineering; June 26-27, 2008; Bari, Italy. [doi: 
+10.14236/ewic/ease2008.8] 
+13. Hölbl M, Kompara M, Kamišalić 
+A, Nemec Zlatolas L. A systematic review of the use of blockchain in healthcare. Symmetry 
+2018 Oct 10;10(10):470. [doi: 10.3390/sym10100470] 
+14. Maslove DM, Klein J, Brohman K, Martin P. Using blockchain technology to manage clinical trials data: A proof-of-concept 
+study. JMIR Med Inform 2018 Dec 21;6(4):e11949 [FREE Full text] [doi: 10.2196/11949] [Medline: 30578196] 
+15. Benchoufi M, Porcher R, Ravaud P. Blockchain protocols in clinical trials: Transparency and traceability of consent. 
+F1000Res 2017;6:66 [FREE Full text] [doi: 10.12688/f1000research.10531.5] [Medline: 29167732] 
+16. Ichikawa D, Kashiyama M, Ueno T. Tamper-resistant mobile health using blockchain technology. JMIR Mhealth Uhealth 
+2017 Jul 26;5(7):e111 [FREE Full text] [doi: 10.2196/mhealth.7938] [Medline: 28747296] 
+17. Azaria A, Ekblaw A, Vieira T, Lippman A. MedRec: Using blockchain for medical data access and permission management. 
+In: Proceedings of the 2nd International Conference on Open and Big Data. 2016 Presented at: 2nd International Conference 
+on Open and Big Data; August 22-24, 2016; Vienna, Austria p. 22-24. [doi: 10.1109/obd.2016.11] 
+18. Cunningham J, Ainsworth J. Enabling patient control of personal electronic health records through distributed ledger 
+technology. Stud Health Technol Inform 2017;245:45-48. [Medline: 29295049] 
+19. Fan K, Wang S, Ren Y, Li H, Yang Y. MedBlock: Efficient and secure medical data sharing via blockchain. J Med Syst 
+2018 Jun 21;42(8):136. [doi: 10.1007/s10916-018-0993-7] [Medline: 29931655] 
+20. Li H, Zhu L, Shen M, Gao F, Tao X, Liu S. Blockchain-based data preservation system for medical data. J Med Syst 2018 
+Jun 28;42(8):141. [doi: 10.1007/s10916-018-0997-3] [Medline: 29956058] 
+21. Liu J, Li X, Ye L, Zhang H, Du X, Guizani M. BPDS: A blockchain based privacy-preserving data sharing for electronic 
+medical records. In: Proceedings of the 2018 IEEE Global Communications Conference. 2018 Presented at: 2018 IEEE 
+Global Communications Conference; December 9-13, 2018; Abu Dhabi, United Arab Emirates p. 9-13. [doi: 
+10.1109/glocom.2018.8647713] 
+22. Mendes D, Rodrigues IP, Fonseca C, Lopes MJ, García-Alonso JM, Berrocal J. Anonymized distributed PHR using 
+blockchain for openness and non-repudiation guarantee. Stud Health Technol Inform 2018;255:170-174. [Medline: 30306930] 
+23. Nagasubramanian G, Sakthivel RK, Patan R, Gandomi AH, Sankayya M, Balusamy B. Securing e-health records using 
+keyless signature infrastructure blockchain technology in the cloud. Neural Comput Appl 2018 Nov 30;32(3):639-647. 
+[doi: 10.1007/s00521-018-3915-1] 
+24. Zhang P, White J, Schmidt DC, Lenz G, Rosenbloom ST. FHIRChain: Applying blockchain to securely and scalably share 
+clinical data. Comput Struct Biotechnol J 2018;16:267-278 [FREE Full text] [doi: 10.1016/j.csbj.2018.07.004] [Medline: 
+30108685] 
+25. Cichosz SL, Stausholm MN, Kronborg T, Vestergaard P, Hejlesen O. How to use blockchain for diabetes health care data 
+and access management: An operational concept. J Diabetes Sci Technol 2019 Mar;13(2):248-253 [FREE Full text] [doi: 
+10.1177/1932296818790281] [Medline: 30047789] 
+26. Omar AA, Bhuiyan MZA, Basu A, Kiyomoto S, Rahman MS. Privacy-friendly platform for healthcare data in cloud based 
+on blockchain environment. Future Gener Comput Syst 2019 Jun;95:511-521. [doi: 10.1016/j.future.2018.12.044] 
+27. Angeletti F, Chatzigiannakis I, Vitaletti A. The role of blockchain and IoT in recruiting participants for digital clinical 
+trials. In: Proceedings of the 25th International Conference on Software, Telecommunications and Computer Networks. 
+2017 Presented at: 25th International Conference on Software, Telecommunications and Computer Networks; September 
+21-23, 2017; Split, Croatia. [doi: 10.23919/SOFTCOM.2017.8115590] 
+28. Kleinaki A, Mytis-Gkometh P, Drosatos G, Efraimidis PS, Kaldoudi E. A blockchain-based notarization service for 
+biomedical knowledge retrieval. Comput Struct Biotechnol J 2018;16:288-297 [FREE Full text] [doi: 
+10.1016/j.csbj.2018.08.002] [Medline: 30181840] 
+29. Nugent T, Upton D, Cimpoesu M. Improving data transparency in clinical trials using blockchain smart contracts. F1000Res 
+2016;5:2541 [FREE Full text] [doi: 10.12688/f1000research.9756.1] [Medline: 28357041] 
+30. Liang X, Zhao J, Shetty S, Liu J, Li D. Integrating blockchain for data sharing and collaboration in mobile healthcare 
+applications. In: Proceedings of the 28th Annual International Symposium on Personal, Indoor, and Mobile Radio 
+Communications. 2017 Presented at: 28th Annual International Symposium on Personal, Indoor, and Mobile Radio 
+Communications; October 8-13, 2017; Montreal, QC. [doi: 10.1109/PIMRC.2017.8292361] 
+31. Saravanan M, Shubha R, Mary A. SMEAD: A secured mobile enabled assisting device for diabetics monitoring. In: 
+Proceedings of the 11th IEEE International Conference on Advanced Networks and Telecommunications Systems. 2018 
+Presented at: 11th IEEE International Conference on Advanced Networks and Telecommunications Systems; December 
+17-20, 2017; Bhubaneswar, India. [doi: 10.1109/ants.2017.8384099] 
+32. Bocek T, Rodrigues B, Strasser T, Stiller B. Blockchains everywhere -A use-case of blockchains in the pharma supply-chain. 
+In: Proceedings of the IFIP/IEEE Symposium on Integrated Network and Service Management. 2017 Presented at: IFIP/IEEE 
+https://medinform.jmir.org/2022/1/e17278 JMIR Med Inform 2022 | vol. 10 | iss. 1 | e17278 | p. 16 
+
+(page number not for citation purposes) 
+
+XSL•FO 
+
+RenderX 
+
+
+JMIR MEDICAL INFORMATICS Elangovan et al 
+
+Symposium on Integrated Network and Service Management; May 8-12, 2017; Lisbon, Portugal. [doi: 
+10.23919/inm.2017.7987376] 
+
+33. Zhou L, Wang L, Sun Y. MIStore: A blockchain-based medical insurance storage system. J Med Syst 2018 Jul 02;42(8):149 
+[FREE Full text] [doi: 10.1007/s10916-018-0996-4] [Medline: 29968202] 
+34. Kotsiuba I, Velvkzhanin A, Yanovich Y, Bandurova I, Dyachenko Y, Zhygulin V. Decentralized e-Health architecture for 
+boosting healthcare analytics. In: Proceedings of the 2nd World Conference on Smart Trends in Systems, Security and 
+Sustainability. 2019 Presented at: 2nd World Conference on Smart Trends in Systems, Security and Sustainability; October 
+30-31, 2018; London, UK. [doi: 10.1109/worlds4.2018.8611621] 
+35. Talukder A, Chaitanya M, Arnold D, Sakurai K. Proof of disease: A blockchain consensus protocol for accurate medical 
+decisions and reducing the disease burden. In: Proceedings of the 2018 IEEE SmartWorld, Ubiquitous Intelligence & 
+Computing, Advanced & Trusted Computing, Scalable Computing & Communications, Cloud & Big Data Computing, 
+Internet of People and Smart City Innovations. 2018 Presented at: 2018 IEEE SmartWorld, Ubiquitous Intelligence & 
+Computing, Advanced & Trusted Computing, Scalable Computing & Communications, Cloud & Big Data Computing, 
+Internet of People and Smart City Innovations; October 7-11, 2018; Guangzhou, China. [doi: 10.1109/smartworld.2018.00079] 
+Abbreviations 
+BPDS: blockchain-based privacy-preserving data sharing 
+EHR: electronic health record 
+EMR: electronic medical record 
+FHIR: Fast Healthcare Interoperability Resources 
+HI: health informatics 
+HIS: hospital information system 
+IT: information technology 
+KSI: keyless signature infrastructure 
+MeSH: Medical Subject Headings 
+mHealth: mobile health 
+MIT: Massachusetts Institute of Technology 
+NEM: New Economy Movement 
+PRISMA: Preferred Reporting Items for Systematic Reviews and Meta-Analyses 
+Q1: question 1 
+Q2: question 2 
+Q3: question 3 
+Q4: question 4 
+
+Edited by G Eysenbach; submitted 02.12.19; peer-reviewed by F Riaz, W Zhang, T Ueno, C Esposito; comments to author 24.04.20; 
+revised version received 12.11.20; accepted 28.09.21; published 20.01.22 
+Please cite as: 
+Elangovan D, Long CS, Bakrin FS, Tan CS, Goh KW, Yeoh SF, Loy MJ, Hussain Z, Lee KS, Idris AC, Ming LC 
+The Use of Blockchain Technology in the Health Care Sector: Systematic Review 
+JMIR Med Inform 2022;10(1):e17278 
+URL: https://medinform.jmir.org/2022/1/e17278 
+doi: 10.2196/17278 
+PMID: 
+©Deepa Elangovan, Chiau Soon Long, Faizah Safina Bakrin, Ching Siang Tan, Khang Wen Goh, Siang Fei Yeoh, Mei Jun Loy, 
+Zahid Hussain, Kah Seng Lee, Azam Che Idris, Long Chiau Ming. Originally published in JMIR Medical Informatics 
+(https://medinform.jmir.org), 20.01.2022. This is an open-access article distributed under the terms of the Creative Commons 
+Attribution License (https://creativecommons.org/licenses/by/4.0/), which permits unrestricted use, distribution, and reproduction 
+in any medium, provided the original work, first published in JMIR Medical Informatics, is properly cited. The complete 
+bibliographic information, a link to the original publication on https://medinform.jmir.org/, as well as this copyright and license 
+information must be included. 
+
+https://medinform.jmir.org/2022/1/e17278 JMIR Med Inform 2022 | vol. 10 | iss. 1 | e17278 | p. 17 
+
+(page number not for citation purposes) 
+
+XSL•FO 
+
+RenderX 
+
+

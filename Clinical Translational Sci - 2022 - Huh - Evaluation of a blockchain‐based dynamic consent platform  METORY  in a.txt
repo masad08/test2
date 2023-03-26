@@ -1,0 +1,1107 @@
+Received: 3 December 2021 Revised: 20 January 2022 Accepted: 26 January 2022 
+
+||
+
+DOI: 10.1111/cts.13246 
+
+ARTICLE 
+
+Evaluation of a blockchain-based dynamic consent platform 
+(METORY) in a decentralized and multicenter clinical trial 
+using virtual drugs 
+
+Ki Young Huh1 | Seol Ju Moon2 | Sang-un Jeong2 | Min-Ji Kim2 | Wooseok Yang3 | 
+Myeonggyu Jeong3 | Min-Gul Kim2,4,5 | SeungHwan Lee1 
+
+1Department of Clinical Pharmacology 
+and Therapeutics, Seoul National 
+University College of Medicine and 
+Hospital, Seoul, Korea 
+
+2Center for Clinical Pharmacology and 
+Biomedical Research Institute, Jeonbuk 
+National University Hospital, Jeonju, 
+Korea 
+
+3Clinical Trial Center, Seoul National 
+
+University Hospital, Seoul, Korea 
+4Research Institute of Clinical Medicine 
+of Jeonbuk National University, Jeonju, 
+Korea 
+
+5Department of Pharmacology, 
+School of Medicine, Jeonbuk National 
+University, Jeonju, Korea 
+
+Correspondence 
+
+Min-Gul Kim, Center for Clinical 
+Pharmacology and Biomedical 
+Research Institute, Jeonbuk National 
+University Hospital, Research Institute 
+of Clinical Medicine of Jeonbuk 
+National University, 20 Geonji-ro, 
+Deokjin-gu, Jeonju, Jeollabuk-do, 
+Korea. 
+Email: mgkim@jbnu.ac.kr 
+
+SeungHwan Lee, Department 
+of Clinical Pharmacology and 
+Therapeutics, Seoul National University 
+College of Medicine and Hospital, 101 
+Daehak-ro, Jongno-gu, Seoul, 03080, 
+Korea. 
+Email: leejh413@snu.ac.kr 
+
+Abstract 
+
+Blockchain is a novel data architecture characterized by a chronological sequence 
+of blocks in a decentralized manner. We aimed to evaluate the real-world feasibility 
+of a blockchain-based dynamic consent platform (METORY) in a decentralized 
+and multicenter trial. The study consisted of three visits (i.e., screening and 
+2 follow-up visits) with a 2-week interval. Each subject was required to report the 
+self-measured body temperatures and take a virtual investigational drug by entering 
+the unique drug code on the application. To simulate real-world study settings, 
+two major (i.e., changes in the schedule of body temperature measurement) 
+and three minor protocol amendments (i.e., nonsignificant changes without any 
+changes in the procedures) were set. Overall study completion rates, proportion 
+of consent, and response time to each protocol amendment and adherence were 
+evaluated. A total of 60 subjects (30 in each center) were enrolled in two study 
+centers. All subjects completed the study, and the overall proportion of consent 
+to each protocol amendment was 95.7 ± 13.7% (mean ± SD), with a median 
+response time of 0.2 h. Overall, subjects took 90.8% ± 19.2% of the total drug, 
+whereas compliance with the schedule was 69.1% ± 27.0%. Subjects reported 
+96.7% ± 4.2% of the total body temperature measurements whereas the adherence 
+to the schedule was 59.0% ± 25.0%, which remarkably decreased after major 
+protocol amendments. In conclusion, we evaluated a blockchain-based dynamic 
+consent platform in real clinical trial settings. The results suggested that major 
+changes should be avoided unless subjects’ proper understanding is warranted. 
+
+Study Highlights 
+WHAT IS THE CURRENT KNOWLEDGE ON THE TOPIC? 
+
+Blockchain technology has recently drawn attention in ensuring data integrity in 
+clinical trials due to its immutability and traceability of data. Dynamic consent is 
+a feasible field where blockchain could be adopted. Decentralized clinical trials 
+
+Min-Gul Kim and SeungHwan Lee should be considered joint corresponding author. 
+
+This is an open access article under the terms of the Creative Commons Attribution-NonCommercial License, which permits use, distribution and reproduction in any 
+medium, provided the original work is properly cited and is not used for commercial purposes. 
+© 2022 The Authors. Clinical and Translational Science published by Wiley Periodicals LLC on behalf of American Society for Clinical Pharmacology and Therapeutics. 
+
+
+Funding information 
+
+after coronavirus disease 2019 (COVID-19) accelerated the adoption of block-
+
+This research was supported by a grant 
+from the Korea Health Technology 
+
+chain in clinical trials. 
+R&D Project through the Korea Health 
+
+WHAT QUESTION DID THIS STUDY ADDRESS? 
+
+Industry Development Institute 
+
+The study evaluated the real-world feasibility of METORY by conducting a de
+
+
+(KHIDI), funded by the Ministry of 
+
+centralized and multicenter clinical trial using virtual drugs.
+
+Health & Welfare, Republic of Korea 
+
+WHAT DOES THIS STUDY ADD TO OUR KNOWLEDGE?
+
+(Grant Number: HI19C0332) 
+
+The results of our study revealed that the information given on the online platform 
+could often be ignored or misunderstood, despite the prompt consent of the 
+subjects. A system to verify the accurate understanding of the subjects should be 
+incorporated in the platform. 
+
+HOW MIGHT THIS CHANGE CLINICAL PHARMACOLOGY OR 
+TRANSLATIONAL SCIENCE? 
+
+Blockchain-based dynamic consent could facilitate clinical trials in decentralized 
+settings. The virtual drug approach could be used to evaluate drug behavior prior 
+
+to the trials. 
+
+INTRODUCTION 
+
+Blockchain, a data architecture characterized by a chronological 
+sequence of “blocks,”1 has gained attention as a 
+tool to ensure data integrity.2 Especially for clinical trials, 
+considerable efforts have been made to guarantee 
+data integrity, which is a key objective mandated in Good 
+Clinical Practice.3 As blockchain does not allow data to be 
+modified or deleted, data recorded on blockchain are not 
+only immutable but also traceable.2,4 These characteristics 
+are reasons why blockchain can be used in the management 
+of clinical trial data.2,4 In addition, a decentralized 
+data structure is another key feature of blockchain, providing 
+reliable protection from malicious attempts to 
+modify data.5 
+
+A recent advent of the dynamic consent concept is 
+an important factor that justifies the use of blockchain 
+in clinical trials. Dynamic consent is a novel approach 
+to allow granular choice of engagement in response to 
+changes in the study over time via interactive and personalized 
+online interfaces.6,7 As dynamic consent requires a 
+time-intensive and transparent process, the immutability 
+and traceability of blockchain are highly suitable for the 
+concept.7,8 
+
+The introduction of decentralized clinical trials also 
+supports using blockchain in clinical trials. Decentralized 
+clinical trials are characterized by data collection in an 
+extensive environment with little engagement of study 
+intermediaries.9 Despite the low-trust environment where 
+the data were collected, the concept remarkably gained 
+attention after the coronavirus disease 2019 (COVID-19) 
+pandemic.10 Considering the robust data integrity blockchain 
+provides, blockchain can be a plausible systematic 
+solution for data integrity in decentralized clinical trials. 
+
+Several cases that adopted blockchain in clinical trials 
+have been reported. An early attempt to incorporate 
+blockchain into clinical trials obtained study consent 
+via a Bitcoin-based blockchain network.11 In this prototype 
+model, investigators and study participants interacted 
+on a web-based consent module that triggered 
+blockchain transactions.11 However, as Bitcoin was a 
+public blockchain mainly aimed at cryptocurrency,12,13 
+the prototype model confronted criticisms in the aspect 
+of scalability and efficiency.11 Recent attempts engaged 
+next-generation blockchains, such as Ethereum14 or 
+Hyperledger fabric,15 which provided improved functionalities 
+other than cryptocurrency. Private blockchains 
+(e.g., Hyperledger fabric) are recognized as more 
+suitable for clinical trials, as they can grant access by 
+study centers or personnel.5,16 
+
+In contrast to the current literature given, the actual 
+clinical trials that incorporated blockchain in the dynamic 
+consent process are relatively few. In addition, several 
+concerns that were raised for dynamic consent are notable. 
+One concern is that the information conveyed by investigators 
+is not always appropriately understood by the 
+study participants.17 Another concern is the accessibility 
+of the digital interface, particularly for vulnerable populations 
+(e.g., elderly individuals).17,18 The patients’ burden 
+of making decisions over time is also a significant con
+
+
+17
+
+cern. For the successful establishment of blockchainbased 
+consent frameworks, real-world evaluation needs to 
+be conducted. 
+
+To implement a blockchain-based dynamic consent 
+framework, we developed a platform named METORY. 
+In this study, we evaluated the real-world feasibility of 
+METORY by conducting a decentralized and multicenter 
+clinical trial using virtual drugs. 
+
+
+METHODS 
+
+Study subjects 
+
+Adults who were able to use web and smart applications 
+were eligible for the study. Subjects with cognitive impairment 
+that could hamper the use of the application were 
+excluded. Subjects should also be able to report the selfmeasured 
+body temperatures via the application and understand 
+the instructions from the investigators delivered 
+via the application. 
+
+Study design 
+
+The study was conducted for 4 weeks. The study consisted 
+of three visits (i.e., screening and 2 follow-up visits) with 
+a 2-week interval (Figure 1a). Subjects installed the application 
+and were given instructions on using the application 
+at the screening visit. At each follow-up visit, subjects 
+completed the questionnaires on their user experience 
+with the application. All other study procedures were selfconducted 
+in home-based settings. 
+
+Each subject was required to report the self-measured 
+body temperatures and take a virtual investigational drug 
+for COVID-19 daily on the application. Each virtual investigational 
+drug consisted of a subject number, study 
+schedule, and a drug code with a unique four-digit figure 
+(Figure 1b). Entering the drug code on the application was 
+regarded as taking the drug, and the time of administration 
+was recorded on the application. Subjects were scheduled 
+to take the investigational drug in the morning with 
+a 4-hour window period (i.e., 7 a.m. to 11 a.m.). Subjects 
+and investigators interacted using the chatting system in 
+the application during the study period (Figure 1c and 
+Table S1). 
+
+The study was approved by the institutional review 
+board of Seoul National University Hospital and Jeonbuk 
+National University Hospital and was conducted in accordance 
+with the Declaration of Helsinki (ClinicalTrials.gov 
+registration no. NCT05047016). 
+
+Study scenarios 
+
+To simulate the real-world study settings, two major 
+and three minor protocol amendments were scheduled 
+during the entire study period. Subjects could be enrolled 
+during the entire study period and followed the 
+study protocol at the time of enrollment (Figure 1d and 
+Table S1). The major protocol amendments involved 
+changes in the procedure schedule and were noted as 
+
+changes in the integer part of the protocol version (e.g., 
+versions 2.1 to 3.0). The minor protocol amendments 
+were changes not related to study design or procedures 
+(e.g., correction of typos). 
+
+In addition, to simulate real-world dropout events 
+due to serious adverse events, four out of 30 subjects 
+in each study center were randomly notified of study 
+discontinuation. When dropout was determined, the 
+subject discontinued taking virtual drugs (entering the 
+drug code on the application) from the time of dropout. 
+Other study schedules were maintained as originally 
+planned (i.e., self-measurement of body temperature 
+and follow-up visits). 
+
+Blockchain-based dynamic consent 
+platform 
+
+The platform incorporated a web and application-based 
+user interface where subjects could give consent. We 
+developed a separate user interface for the subjects and 
+the investigators to maximize the convenience of the 
+consent process. Each subject accessed the web or application 
+and made a user account after the authentication 
+process. The verified user was then given access to 
+the platform. 
+
+When a subject and an investigator signed on an informed 
+consent form, consent-related information was 
+integrated in the study management part of the system. 
+The information was then sent to the decentralized application 
+(dAPP), which was the only component that 
+mediated the study management part and the blockchain 
+part. The dAPP could write the consent-related information 
+onto the blockchain part after the validation process 
+in the blockchain part. The dAPP could also could fetch 
+the consent-related information from the blockchain part 
+requested by the user. 
+
+The blockchain part was developed using Hyperledger 
+Fabric, an enterprise-grade private blockchain framework.
+19 Hyperledger Fabric was selected as it could not 
+only ensure integrity of data but also enable an efficient 
+center-level authorization management. Newly added data 
+in the blockchain architecture could be only appended to 
+form a “chain” structure, which guaranteed immutability. 
+Data must be validated by the participating peers in the 
+blockchain prior to appendage, which was called the “consensus” 
+process. The consensus process was mediated by 
+the “platform orderer nodes.” The nodes also performed 
+certification and access management process for each 
+user. Comprehensively, restricted access of the credible accounts 
+and immutability endorsed the implementation of 
+the private blockchain architecture (Figure S1). 
+
+
+Consent Consent Consent Consent Consent Consent Consent 
+
+(a) 
+
+
+Consent Visit 1 Visit 2 
+(Week 2) 
+
+(Week 4, 
+
+Response 
+time 
+
+Post-study 
+visit) 
+
+Questionnaires 
+
+Questionnaires 
+
+
+Event Event Event Event 
+
+Major Minor Minor 
+amendment amendment amendment 
+
+(b) 
+
+
+(c) 
+
+
+Chatting 
+Virtual drug 
+1234 
+Drug code: 
+1234 
+Confirmed 
+09:36 
+09:40 
+(d) 
+Version 1.0 Version 1.1 Version 2.0 Version 2.1 
+Body temperature at 8AM-11AM Body temperature at midday-3P Body temperature at 6P-9P 
+
+Version 3.0 Version 3.1 
+Subject 1 
+Subject 2 
+Subject 3 
+Subject 4 
+Subject 5 
+Subject 6 
+Subject 7 
+Subject 8 
+Subject 9 
+Subject 10 
+Subject 11 
+Subject 12 
+Subject 13 
+... 
+Subject 60 
+Dropout 
+Dropout 
+Consent Consent 
+Consent 
+Consent 
+Consent 
+Minor Major Minor Major Minor 
+protocol protocol protocol protocol protocol 
+amendment amendment amendment amendment amendment 
+
+FIGURE 1 Study design. Schematic representation of the study schedule (a), administration of virtual drug (b), actual virtual drug used 
+(c), and protocol amendments (d) 
+
+
+Assessment of the response to study 
+consent and adherence 
+
+The count and proportion of consent to the total encountered 
+protocol amendments were calculated. Study 
+completion rates were evaluated excluding scheduled 
+dropout due to serious adverse events. Response time 
+was calculated as the difference between protocol 
+amendment and when subjects signed the amended 
+consent form. 
+
+Adherence evaluation comprised drug adherence (adherence 
+related to drug administration) and procedural 
+adherence (adherence related to body temperature measurement). 
+Drug adherence consisted of administration of 
+the right drug and adherence to the drug administration 
+schedule. Procedural adherence comprised whether the 
+body temperature was measured and adherence to the procedural 
+schedule. 
+
+Statistical analysis 
+
+The sample size was not formally estimated given the 
+exploratory nature of the study. Continuous variables 
+are summarized as the mean, standard deviation, median, 
+minimum, and maximum. Count data were summarized 
+as the mean and standard deviation of the 
+proportions in each subject and overall count of a specific 
+event to the total counts. R version 4.1.0 (R Core 
+
+Team, Vienna, Austria) was used for visualization and 
+statistical analyses. 
+
+RESULTS 
+
+Subject disposition and response to consent 
+
+A total of 60 subjects (30 subjects for each center) were 
+enrolled, and all subjects completed the study. The overall 
+proportion of consent to each protocol amendment was 
+95.7 ± 13.2% (presented as the mean ± standard deviation). 
+The median response time to each amendment was 
+0.2 h (Table 1). The entire response to consent of each subject 
+is presented in Figure 2. 
+
+Study adherence 
+
+Overall, the subjects took 90.8% ± 19.2% of the total drug 
+amount (Table 1, Figure 3), whereas adherence to the 
+schedule was 69.1 ± 27.0% (Table 1, Figure 4). Similarly, 
+subjects reported 97.6 ± 4.9% of the total body temperature 
+measurements (Table 1, Figure 5), whereas adherence to 
+the schedule was 59.0% ± 25.0% (Table 1, Figure 6). In 
+both centers, adherence to the procedural schedule remarkably 
+decreased after the major protocol amendment 
+(i.e., study protocol versions 1.1 to 2.0) where procedural 
+schedules were changed (Figure 6). 
+
+TABLE 1 Summary of response to 
+study consent and adherence 
+Response to study consent 
+Proportion of consents (%) 93.3 ± 17.3 98.3 ± 6.3% 95.7 ± 13.2 
+(129/139) (118/120) (247/259) 
+Study completion rate (%) 100.0 (30/30) 100.0 (30/30) 100.0 (60/60) 
+Response time, h 0.3 [0.0–91.6] 0.2 [0.0–43.3] 0.2 [0.0–91.6] 
+
+Center 1 (n= 30) Center 2 (n= 30) Overall (n= 60) 
+96.7 ± 4.2 98.5 ± 5.4 97.6 ± 4.9 
+(812/840) (827/840) (1639/1680) 
+
+Drug adherence 
+Administration of right 
+drug (%) 
+89.6 ± 20.6 92.0 ± 17.9 90.8 ± 19.2% 
+(753/840) (773/840) (1526/1680) 
+Adherence to the drug 
+schedule (%) 
+administration 
+75.7 ± 27.8 
+(636/840) 
+62.5 ± 24.9 
+(525/840) 
+69.1 ± 27.0 
+(1161/1680) 
+Procedural adherence 
+Whether the body 
+temperature was 
+measured (%) 
+Adherence to the 50.5 ± 24.7 67.5 ± 22.6 59.0 ± 25.0 
+procedural schedule (%) (424/840) (567/840) (991/1680) 
+
+Note: Data are presented as mean ± standard deviation of the proportions in each subject (only overall 
+values for study completion rate) and overall counts to total except for response time. Response time is 
+presented as median [minimum-maximum]. 
+
+
+101 
+102 
+103 
+104 
+105 
+106 
+107 
+108 
+109 
+110 
+111 
+112 
+113 
+114 
+115 
+116 
+117 
+118 
+119 
+120 
+121 
+122 
+123 
+124 
+125 
+126 
+127 
+128 
+129 
+130 
+Study subject (Center 1) 
+101 
+102 
+103 
+104 
+105 
+106 
+107 
+108 
+109 
+110 
+111 
+112 
+113 
+114 
+115 
+116 
+117 
+118 
+119 
+120 
+121 
+122 
+123 
+124 
+125 
+126 
+127 
+128 
+129 
+130 
+Study subject (Center 1) 
+09/18 09/25 10/02 10/09 10/16 10/23 
+
+Date of study procedure 
+
+201 
+202 
+203 
+204 
+205 
+206 
+207 
+208 
+209 
+210 
+211 
+212 
+213 
+214 
+215 
+216 
+217 
+218 
+219 
+220 
+221 
+222 
+223 
+224 
+225 
+226 
+227 
+228 
+229 
+230 
+Study subject (Center 2) 
+10/18 10/25 11/01 11/08 11/15 11/22 
+
+Date of study procedure 
+
+
+Ver1.0 
+
+
+Ver1.1 
+
+
+Ver2.0 
+
+
+Ver2.1 
+
+
+Ver3.0 
+
+
+Ver3.1
+
+Study protocol 
+
+FIGURE 2 Summary of the responses to protocol amendments. Dots (●) represent each subject’s consent and each protocol 
+amendment is denoted as colors. Dashed horizontal lines represent scheduled study duration (28 days) of each subject and solid vertical 
+lines represent the scheduled date of each protocol amendment. Black squares (■) denote scheduled dropout of each subject 
+
+DISCUSSION drug administration with an ~90% overall adherence 
+
+rate. However, compliance with the drug and procedural 
+The blockchain-based dynamic consent platform was schedule was ~70%, which was much lower than the overable 
+to retain consent from subjects for 4 weeks with a all adherence rate. 
+prompt response within an hour. Adherence results Despite the main purpose of providing sufficient 
+demonstrated that subjects could perform home-based information to the subjects, the practicability of 
+
+
+TRIAL FOR BLOCKCHAIN-BASED 
+DYNAMIC CONSENT | 1263 
+dynamic consent is often questioned. One concern is 
+that subjects are exposed to “unwanted information,” 
+which could be a large burden when participating in 
+a study.20,21 Another concern is that accessing information 
+via the web or through an application can be 
+challenging for several vulnerable patient groups (e.g., 
+elderly).22 
+The results of our study revealed that the information 
+given on the online platform could often be ignored or 
+misunderstood. We noted that many subjects gave consent 
+to the amended study protocols without an accurate 
+understanding of the content. Most subjects in center 
+1 stuck to the initial procedure (i.e., body temperature 
+measurement in the morning). A similar phenomenon 
+FIGURE 3 Summary of drug adherence: adherence to the right drug. White circles (○) represent the administration of the correct study 
+drug while black circles (●) represent the incorrect conducts. Solid vertical lines represent the scheduled date of each protocol amendment. 
+There were no changes to the administration of drug during the study 
+101 
+102 
+103 
+104 
+105 
+106 
+107 
+108 
+109 
+110 
+111 
+112 
+113 
+114 
+115 
+116 
+117 
+118 
+119 
+120 
+121 
+122 
+123 
+124 
+125 
+126 
+127 
+128 
+129 
+130 
+09/16 09/23 09/30 10/07 10/14 10/21 10/28 
+Date of study procedure 
+Study subject (Center 1) 
+201 
+202 
+203 
+204 
+205 
+206 
+207 
+208 
+209 
+210 
+211 
+212 
+213 
+214 
+215 
+216 
+217 
+218 
+219 
+220 
+221 
+222 
+223 
+224 
+225 
+226 
+227 
+228 
+229 
+230 
+10/14 10/21 10/28 11/04 11/11 11/18 11/25 
+Date of study procedure 
+Study subject (Center 2) 
+Study protocol Ver1.0 Ver1.1 Ver2.0 Ver2.1 Ver3.0 Ver3.1 
+17528062, 2022, 5, Downloaded from https://ascpt.onlinelibrary.wiley.com/doi/10.1111/cts.13246 by Cochrane Saudi Arabia, Wiley Online Library on [26/03/2023]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+1264 | HUH et al. 
+was noted in center 2. In addition, several subjects in 
+center 2 confused changes in body temperature measurement 
+with those in drug administration. This resulted 
+in unintended protocol deviations in the drug 
+schedule, which could be a highly risky situation in real 
+clinical trial settings. 
+The protocol deviations strongly suggested that 
+the system to verify the accurate understanding of the 
+subjects is required. We found that compliance with 
+the study procedures was high at the beginning of the 
+study, when the investigators directly gave instructions 
+on the study procedures. The compliance dramatically 
+FIGURE 4 Summary of the drug adherence: adherence to the drug administration schedule. White circles (○) represent the 
+administration of the study drug at the right schedule (within the scheduled time window) while black circles (●) represent the incorrect 
+conducts. Solid vertical lines represent the scheduled date of each protocol amendment. There were no changes to the administration of 
+drug during the study 
+101 
+102 
+103 
+104 
+105 
+106 
+107 
+108 
+109 
+110 
+111 
+112 
+113 
+114 
+115 
+116 
+117 
+118 
+119 
+120 
+121 
+122 
+123 
+124 
+125 
+126 
+127 
+128 
+129 
+130 
+09/16 09/23 09/30 10/07 10/14 10/21 10/28 
+Date of study procedure 
+Study subject (Center 1) 
+201 
+202 
+203 
+204 
+205 
+206 
+207 
+208 
+209 
+210 
+211 
+212 
+213 
+214 
+215 
+216 
+217 
+218 
+219 
+220 
+221 
+222 
+223 
+224 
+225 
+226 
+227 
+228 
+229 
+230 
+10/14 10/21 10/28 11/04 11/11 11/18 11/25 
+Date of study procedure 
+Study subject (Center 2) 
+Study protocol Ver1.0 Ver1.1 Ver2.0 Ver2.1 Ver3.0 Ver3.1 
+17528062, 2022, 5, Downloaded from https://ascpt.onlinelibrary.wiley.com/doi/10.1111/cts.13246 by Cochrane Saudi Arabia, Wiley Online Library on [26/03/2023]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+TRIAL FOR BLOCKCHAIN-BASED 
+DYNAMIC CONSENT | 1265 
+decreased after the notification of the protocol amendment 
+via the application. This implied that several 
+systemic components that can aid efficient online communication 
+are necessary. Such components include 
+audio or video component comprehension quizzes.23,24 
+It was supported by several opinions from the subjects in 
+our study that the content provided in the electronic file 
+was difficult to understand. 
+To our knowledge, this was the first trial to utilize 
+virtual drugs to evaluate study adherence in a decentralized 
+clinical trial. As most decentralized clinical trials 
+involving home-based 
+drug administration and remote 
+FIGURE 5 Summary of procedural adherence: whether body temperature was measured. White circles (○) represent the measurement 
+of the body temperature while black circles (●) represent the missing measurements. Solid vertical lines represent the scheduled date of 
+each protocol amendment. The scheduled time for body temperature measurements was changed at the major amendments 
+101 
+102 
+103 
+104 
+105 
+106 
+107 
+108 
+109 
+110 
+111 
+112 
+113 
+114 
+115 
+116 
+117 
+118 
+119 
+120 
+121 
+122 
+123 
+124 
+125 
+126 
+127 
+128 
+129 
+130 
+09/16 09/23 09/30 10/07 10/14 10/21 10/28 
+Date of study procedure 
+Study subject (Center 1) 
+201 
+202 
+203 
+204 
+205 
+206 
+207 
+208 
+209 
+210 
+211 
+212 
+213 
+214 
+215 
+216 
+217 
+218 
+219 
+220 
+221 
+222 
+223 
+224 
+225 
+226 
+227 
+228 
+229 
+230 
+10/14 10/21 10/28 11/04 11/11 11/18 11/25 
+Date of study procedure 
+Study subject (Center 2) 
+Study protocol Ver1.0 Ver1.1 Ver2.0 Ver2.1 Ver3.0 Ver3.1 
+17528062, 2022, 5, Downloaded from https://ascpt.onlinelibrary.wiley.com/doi/10.1111/cts.13246 by Cochrane Saudi Arabia, Wiley Online Library on [26/03/2023]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+1266 | HUH et al. 
+monitoring,25,26 the accurate tracking of drug behavior is 
+important. The virtual drugs enabled tracking drug adherence 
+with little cost and risk. This approach can be applied 
+to further research, such as remote delivery of the 
+medication.27 
+We also showed the practicality of blockchain-based 
+platforms to ensure data integrity in decentralized settings.
+5,28 METORY provided stable interactions between 
+subjects and investigators. All consent information and 
+procedures were tracked through the blockchain platform 
+FIGURE 6 Summary of procedural adherence: adherence to the procedural schedule. White circles (○) represent the measurement of 
+the body temperature at the right schedule (within the scheduled time window) while black circles (●) represent the incorrect conducts. 
+Solid vertical lines represent the scheduled date of each protocol amendment. The scheduled time for body temperature measurements was 
+changed at the major amendments 
+101 
+102 
+103 
+104 
+105 
+106 
+107 
+108 
+109 
+110 
+111 
+112 
+113 
+114 
+115 
+116 
+117 
+118 
+119 
+120 
+121 
+122 
+123 
+124 
+125 
+126 
+127 
+128 
+129 
+130 
+09/16 09/23 09/30 10/07 10/14 10/21 10/28 
+Date of study procedure 
+Study subject (Center 1) 
+201 
+202 
+203 
+204 
+205 
+206 
+207 
+208 
+209 
+210 
+211 
+212 
+213 
+214 
+215 
+216 
+217 
+218 
+219 
+220 
+221 
+222 
+223 
+224 
+225 
+226 
+227 
+228 
+229 
+230 
+10/14 10/21 10/28 11/04 11/11 11/18 11/25 
+Date of study procedure 
+Study subject (Center 2) 
+Study protocol Ver1.0 Ver1.1 Ver2.0 Ver2.1 Ver3.0 Ver3.1 
+17528062, 2022, 5, Downloaded from https://ascpt.onlinelibrary.wiley.com/doi/10.1111/cts.13246 by Cochrane Saudi Arabia, Wiley Online Library on [26/03/2023]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+and free from tampering. Utilization of the private blockchain 
+made it possible to provide separate authorization 
+by centers and personnel. 
+
+Our study had some limitations. The virtual drugs could 
+not accurately reflect the events after administering the actual 
+drugs, especially for adverse events. The absence of comparators 
+(i.e., paper-based consent) also restricted the interpretation 
+of the results. Notwithstanding, our study was able to 
+demonstrate the real-world feasibility of a blockchain-based 
+dynamic consent platform with quantitative outcomes. 
+
+In conclusion, we evaluated a blockchain-based dynamic 
+consent platform in real clinical trial settings. The 
+results suggested that major changes should be avoided 
+unless subjects’ proper understanding is warranted. 
+
+CONFLICT OF INTEREST 
+
+The authors declared no competing interests for this work. 
+
+AUTHOR CONTRIBUTIONS 
+
+K.Y.H., M.-G.K., and S.L. wrote the manuscript. K.Y.H., 
+S.J., M.-G.K., and S.L. designed the research. K.Y.H., 
+S.J.M., S.J., M.-J.K., W.Y., and M.J. performed the research. 
+K.Y.H., S.J., M.-J.K., and M.J. analyzed data. 
+
+REFERENCES 
+
+1. Zheng Z, Xie S, Dai H, Chen X, Wang H. An overview of blockchain 
+technology: Architecture, consensus, and future trends. 
+2017 IEEE international congress on big data (BigData congress). 
+2017;557-564. 
+2. Shi S, He D, Li L, et al. Applications of blockchain in ensuring 
+the security and privacy of electronic health record systems: A 
+survey. Comput Secur. 2020;97:101966. 
+3. Khin NA, Francis G, Mulinde J, et al. Data integrity in global 
+clinical trials: discussions from Joint US food and drug administration 
+and UK medicines and healthcare products regulatory 
+agency good clinical practice workshop. Clin Pharmacol Ther. 
+2020;108:949-963. 
+4. Benchoufi M, Ravaud P. Blockchain technology for improving 
+clinical research quality. Trials. 2017;18:335. 
+5. Wong DR, Bhattacharya S, Butte AJ. Prototype of running clinical 
+trials in an untrustworthy environment using blockchain. 
+Nat Commun. 2019;10:917. 
+6. Kaye J, Whitley EA, Lund D, et al. Dynamic consent: a patient 
+interface for twenty-first century research networks. Eur J Hum 
+Genet. 2015;23:141-146. 
+7. Albanese G, Calbimonte J-P, Schumacher M, Calvaresi D. 
+Dynamic consent management for clinical trials via private 
+blockchain technology. J Ambient Intelligence Humanized 
+Comput. 2020;11:4909-4926. 
+8. Velmovitsky PE, Miranda PASES, Vaillancourt H, et al. A 
+blockchain-based consent platform for active assisted living: 
+modeling study and conceptual framework. J Med Internet Res. 
+2020;22:e20832. 
+9. Khozin S, Coravos A. Decentralized trials in the age of realworld 
+evidence and inclusivity in clinical investigations. Clin 
+Pharmacol Ther. 2019;106:25-27. 
+10. De Brouwer W, Patel CJ, Manrai AK, Rodriguez-Chavez IR, 
+Shah NR. Empowering clinical research in a decentralized 
+world. NPJ Digit Med. 2021;4:102. 
+11. Benchoufi M, Porcher R, Ravaud P. Blockchain protocols 
+in clinical trials: Transparency and traceability of consent. 
+F1000Res. 2017;6:66. 
+12. Nakamoto S. A peer-to-peer electronic cash system. Bitcoin Project 
+website. https://bitcoin.org/bitcoin.pdf. Accessed February 14, 
+2022. 
+13. Zhao W. Blockchain technology: development and prospects. 
+Natl Sci Rev. 2019;6:369-373. 
+14. Maslove DM, Klein J, Brohman K, Martin P. Using blockchain 
+technology to manage clinical trials data: a proof-of-concept 
+study. JMIR Med Inform. 2018;6:e11949. 
+15. Hang L, Kim B, Kim K, Kim D. A permissioned blockchainbased 
+clinical trial service platform to improve trial data transparency. 
+Biomed Res Int. 2021;2021:5554487. 
+16. Zhuang Y, Sheets L, Shae Z, Tsai JJP, Shyu CR. Applying blockchain 
+technology for health information exchange and persistent 
+monitoring for clinical trials. AMIA Annu Symp Proc. 
+2018;2018:1167-1175. 
+17. Lunt H, Connor S, Skinner H, Brogden G. Electronic informed 
+consent: the need to redesign the consent process for the digital 
+age. Intern Med J. 2019;49:923-929. 
+18. Nouri SS, Avila-Garcia P, Cemballi AG, et al. Assessing mobile 
+phone digital literacy and engagement in user-centered design 
+in a diverse, safety-net population: mixed methods study. JMIR 
+Mhealth Uhealth. 2019;7:e14250. 
+19. Androulaki E, Barger A, Bortnikov V, et al. Hyperledger fabric: 
+a distributed operating system for permissioned blockchains. 
+Proceedings of the Thirteenth EuroSys Conference. Article 
+30 (2018). arXiv.org Preprint. https://doi.org/10.1145/31905 
+08.3190538. 
+20. Steinsbekk KS, Kåre Myskja B, Solberg B. Broad consent 
+versus dynamic consent in biobank research: is passive 
+participation an ethical problem? Eur J Hum Genet. 
+2013;21:897-902. 
+21. Teare HJA, Prictor M, Kaye J. Reflections on dynamic consent 
+in biomedical research: the story so far. Eur J Hum Genet. 
+2021;29:649-656. 
+22. Wee R. Dynamic consent in the digital age of biology. J Prim 
+Health Care. 2013;5:259-261. 
+23. Vanaken HI, Masand SN. Awareness and collaboration across 
+stakeholder groups important for econsent achieving valuedriven 
+adoption. Ther Innov Regul Sci. 2019;53:724-735. 
+24. Madathil KC, Koikkara R, Dorlette-Paul M, et al. An investigation 
+of format modifications on the comprehension of information 
+in consent form when presented on mobile devices. 
+Proc Hum Fact Ergonom Soc Annual Meeting. 2012;56:921-925. 
+25. Banks MA. Core Concept: In the wake of COVID-19, decentralized 
+clinical trials move to center stage. Proc Natl Acad Sci USA. 
+2021;118:e2119097118. 
+26. Izmailova ES, Ellis R, Benko C. Remote monitoring in clinical 
+trials during the COVID-19 pandemic. Clin Transl Sci. 
+2020;13:838-841. 
+27. Stoa MK, Frail CK, Farley JF, Pestka DL, Blanchard CM. 
+Adaptations made to delivery of comprehensive medication 
+management in the community pharmacy setting during 
+COVID-19. Explor Res Clin Soc Pharm. 2021;4:100089. 
+
+28. Hashem H, Abufaraj M, Tbakhi A, Sultan I. Obstacles and 
+considerations related to clinical trial research during the 
+COVID-19 Pandemic. Front Med (Lausanne). 2020;7:598038. 
+SUPPORTING INFORMATION 
+
+Additional supporting information may be found in the 
+online version of the article at the publisher’s website. 
+
+How to cite this article: Huh KY, Moon SJ, Jeong 
+S-U, et al. Evaluation of a blockchain-based dynamic 
+consent platform (METORY) in a decentralized and 
+multicenter clinical trial using virtual drugs. Clin 
+Transl Sci. 2022;15:1257-1268. doi:10.1111/cts.13246 
+
+

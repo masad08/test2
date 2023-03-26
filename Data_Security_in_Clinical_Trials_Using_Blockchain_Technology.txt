@@ -1,0 +1,990 @@
+Political 
+and 
+Economic 
+Implications 
+of 
+Blockchain 
+Technology 
+in 
+Business 
+and 
+Healthcare 
+
+
+Dário de Oliveira RodriguesInstituto Politécnico de Santarém, Portugal 
+
+
+
+A volume in the Advances in Data Mining and 
+Database Management (ADMDM) Book Series 
+
+
+Published in the United States of America by 
+IGI Global 
+Business Science Reference (an imprint of IGI Global) 
+701 E. Chocolate Avenue 
+Hershey PA, USA 17033 
+Tel: 717-533-8845 
+Fax: 717-533-8661 
+E-mail: cust@igi-global.com 
+Web site: http://www.igi-global.com 
+
+Copyright © 2021 by IGI Global. All rights reserved. No part of this publication may be reproduced, stored or distributed in 
+any form or by any means, electronic or mechanical, including photocopying, without written permission from the publisher. 
+Product or company names used in this set are for identification purposes only. Inclusion of the names of the products or 
+companies does not indicate a claim of ownership by IGI Global of the trademark or registered trademark. 
+
+Library of Congress Cataloging-in-Publication Data 
+Names: Rodrigues, Dario de Oliveira, 1963- editor. 
+Title: Political and economic implications of blockchain technology in 
+business and healthcare / Dario de Oliveira Rodrigues, editor. 
+Description: Hershey, PA : Business Science Reference, [2021] | Includes 
+bibliographical references and index. | Summary: “This book provides 
+relevant theoretical frameworks on the political and economic impact of 
+blockchain technology, which is thought to be able to redesign human 
+interactions concerning transactions”-- Provided by publisher. 
+Identifiers: LCCN 2021005801 (print) | LCCN 2021005802 (ebook) | ISBN 
+9781799873631 (hardcover) | ISBN 9781799873648 (paperback) | ISBN 
+9781799873655 (ebook) 
+Subjects: LCSH: Technological innovations--Economic aspects. | Blockchains 
+(Databases)--Industrial applications. | Blockchains 
+(Databases)--Economic aspects. 
+Classification: LCC HC79.T4 P649 2021 (print) | LCC HC79.T4 (ebook) | DDC 
+338/.064--dc23 
+LC record available at https://lccn.loc.gov/2021005801 
+LC ebook record available at https://lccn.loc.gov/2021005802 
+
+This book is published in the IGI Global book series Advances in Data Mining and Database Management (ADMDM) 
+(ISSN: 2327-1981; eISSN: 2327-199X) 
+
+British Cataloguing in Publication Data 
+A Cataloguing in Publication record for this book is available from the British Library. 
+
+All work contributed to this book is new, previously-unpublished material. The views expressed in this book are those of the 
+authors, but not necessarily of the publisher. 
+
+For electronic access to this publication, please contact: eresources@igi-global.com. 
+
+
+Chapter 10 
+Data Security in Clinical Trials 
+Using Blockchain Technology 
+
+
+Marta de-Melo-Diogo 
+
+ISEG, Lisbon School of Economics and Management, University of Lisbon, Portugal 
+
+Jorge Tavares 
+
+NOVA IMS, Universidade Nova de Lisboa, Portugal 
+
+Ângelo Nunes Luís 
+
+ISEG, Lisbon School of Economics and Management, University of Lisbon, Portugal 
+
+ABSTRACT 
+
+
+Blockchain technology in a clinical trial setting is a valuable asset due to decentralization, immutability, 
+transparency, and traceability features. For this chapter, a literature review was conducted to map the 
+current utilization of blockchain systems in clinical trials, particularly data security managing systems 
+and their characteristics, such as applicability, interests of use, limitations, and issues. The advantages 
+of data security are producing a more transparent and tamper-proof clinical trial by providing accurate, 
+validated data, therefore producing a more reliable and credible clinical trial. On the other hand, data 
+integrity is a critical issue since data obtained from trials are not instantly made public to all participants. 
+Work needs to be done to establish the significant implications in security data when applying blockchain 
+technology in a real-world clinical trial setting and generalized conditions of use to establish its security. 
+
+INTRODUCTION 
+
+
+Since its discovery, Blockchain is emerging as an innovative technology to provide data transactions and 
+storage in an effective, secure, and timely manner system. This technology has been applied to many 
+sectors of activity, potentializing its features and improving processes and business mindsets. 
+
+The health sector is no exception, and many uses of this technology have been reported. Blockchain’s 
+full applicability in healthcare is still underway, and many optimizations are needed to be made, not 
+
+DOI: 10.4018/978-1-7998-7363-1.ch010 
+
+Copyright © 2021, IGI Global. Copying or distributing in print or electronic forms without written permission of IGI Global is prohibited. 
+
+
+Data Security in Clinical Trials Using Blockchain Technology 
+
+
+only from a technology development perspective but also concerns about ethical and data protection 
+regulation are raised and need improvement. 
+
+It is considered essential to mention that the interest in the applicability of blockchain systems in the 
+healthcare sector has been increasing since 2016. More specifically, the number of published articles 
+related to Blockchain in the Pubmed bibliographic database has increased drastically in 2018 (only five 
+studies were published in 2016 and only 16 in 2017), reflecting the potential and growing interest of 
+these systems in the healthcare sector (Mackey et al., 2019). Only 4% of these studies were related to 
+clinical trials, and 32% were related to healthcare data (Mackey et al., 2019). 
+
+Particularly in clinical trials, this technology is yet to reach its full potential. Nevertheless, considering 
+the dimension and complexity of a clinical trial network and process interlined, blockchain technology 
+might improve data sharing, management, and access to all key players. However, identifying the risks 
+and threats of applying this technology in such an environment is still amiss, and work needs to be done 
+to establish them in a realistic scenario setting. 
+
+Therefore, the purpose of this chapter is to map the current use of blockchain systems in clinical trials, 
+particularly data security managing systems, and its characteristics, such as applicability, interests 
+of use, limitations, and issues, as reported throughout the literature review. 
+
+BACKGROUND 
+
+
+Although variations of term have been used before, Blockchain came around in 2008 when this technology 
+was created by Satoshi Nakamoto to support and securely record Bitcoin cryptocurrency transactions 
+(Meunier, 2018; Monrat et al., 2019). Since then, the interest in this technology has increased and soon 
+was applied into other areas of interested such as government, manufacturing, finance, healthcare and 
+distribution (Monrat et al., 2019). 
+
+Blockchain is an advanced data structure, designed for storing and sharing information, composed by 
+a growing chain of blocks organized by chronological order (Agbo et al., 2019)(S Chen, Hannah et al., 
+2019). Each block stores information with digital signatures in a decentralized and distributed network, 
+it allows to record a transaction by binding different blocks connected with chains (S Chen, Hannah et 
+al., 2019) (Abu-elezz et al., 2020) (Monrat et al., 2019). This transaction is validated by a consent algorithm, 
+and therefore, needs no third-party validation to complete an action. The chain continues to grow 
+as new transactions are built and blocks are added into it (Omar, Jayaraman, Salah, Yaqoob, et al., 2020). 
+
+Unlike traditional methods, blockchain enables peer-to-peer transfer of digital assets without any 
+intermediaries. All the transactions occur in a decentralized manner that eliminates the requirement for 
+any intermediaries to validate and verify the transactions. Every transaction is regulated by the participants 
+who store and share the information throughout the private key: an unique and individual signature 
+linked to each transaction recorded (S Chen, Hannah et al., 2019). 
+
+The digitalization era is reaching almost every industry and is expected that the Distribution Ledger 
+Technology, where technologies such as blockchain, artificial intelligence and Internet of Things are 
+inserted, to reach a market value of $60.7 billion by 2024 (Smetanin et al., 2020). 
+
+The features of blockchain, include (Hussien et al., 2019): 
+
+• Decentralization, access of information through third parties with multiple copies in multiple 
+locations; 
+
+Data Security in Clinical Trials Using Blockchain Technology 
+
+
+• Consent, the consensus algorithm created controls the access and distribution within a network; 
+• Immutability: once the information has entered a blockchain no longer can be changed or altered; 
+a 
+• Auditability and transparency, every transaction information and signature can be traced; interoperability, 
+different systems are connected and communicate in an autonomous manner. 
+The blockchain platform is distinguished by its key characteristics enabling it to be a promising 
+disruptive technology that reduces the emphasis on traditional data management systems (Omar, Jayaraman, 
+Salah, Yaqoob, et al., 2020). The blockchain is poised to innovate and transform a wide range of 
+applications, including goods transfer (supply chain), digital media transfer (sale of art), remote services 
+delivery (travel and tourism), platforms for example, moving computing to data sources and distributed 
+credentialing. 
+
+Healthcaresystemsarecomplexandmulti-dimensionalorganizations,involvingmultipleprofessionals 
+whin different functions and degrees of access information, multiple organizations of different sectors 
+of activities such as regulatory agencies, insurance companies, suppliers, technical supports and many 
+others. Providing care to a patient involves many professionals and actions, therefore is important that 
+health records are available and updated in time to provide the accurate and appropriate care to each 
+patient at all times. On the other hand, it is also important that every patient owns is medical record and 
+has fully knowledge of the parties that have been granted access to the very same. 
+
+Data security and ownership represent two of the most sensitive topics of today’s generation. In fact, 
+since the approval of General Data Protection Regulation in 2016 in European Union, when it comes to 
+medical records these two topics became even more important and prominent. Besides this, managing 
+patient data integrity is one of the major concerns for the healthcare industry, combining the need to 
+access each patient characteristics and complete medical records at any time. 
+
+The introduction of blockchain systems in healthcare might be the solution to some of the concerns 
+raised in data security and medical records accessibility and might the solution to gather and improve 
+communications and data sharing between every player in the healthcare systems. 
+
+Concerning blockchain applications in healthcare, blockchain benefits are the following (Agbo et 
+al., 2019)(Hasselgren et al., 2020): 
+
+• Decentralization: Healthcare access is spread to multiple players, such as doctors, hospitals, health 
+insurance companies, pharmacies, etc. This feature of blockchain allows access to multiple stakeholders 
+in a timely manner and provides information sharing in real time. 
+• Transparency: Given the security and transparency of transactions, information systems and storing 
+systems are very reliable, and therefore provide a solid source of information for healthcare 
+stakeholders. This feature is very important for example, when submitting information to regulatory 
+agencies. 
+• Data verifiability: every transaction can be check for its integrity and validity. This information 
+is important for healthcare records validation, insurance claim verification and in pharmaceutical 
+supply chain to detect contrafact products. 
+• Transparency and trust: given the amount of information stored and that every transaction is record, 
+blockchain provide for healthcare providers and stakeholders an ambient of trust and transparency 
+since every information is available to consult. 
+
+Data Security in Clinical Trials Using Blockchain Technology 
+
+
+• Robustness: The blockchain storage method guarantees that data is available and prevented from 
+loss. 
+• Data ownership: given the levels of access and control of access of a blockchain, through this 
+data storage system, patients are able to a more detailed control of the availability of their medical 
+records to third parties. 
+• Data security and privacy: once an information has entered in a blockchain it is extremely difficult 
+to alter through maleficent intentions. Additionally, every transaction is recorded in chronological 
+order and is also traceable by its time stamp and user responsible for that action. 
+Concerning healthcare, blockchain systems can be applied in different areas such as (PwC, 2018) 
+(Deloitte, 2020)(S Chen, Hannah et al., 2019)(Tan et al., 2020) (Smetanin et al., 2020) (Omar, Jayaraman, 
+Salah, Yaqoob, et al., 2020)(Monrat et al., 2019): 
+
+• Supply chain: products status can be checked by the supplier at all times. This includes information 
+regarding the transportation route, and more importantly, about controlled factors such as 
+temperature and humidity throughout the transportation, contributing for a better monitorization 
+and assuring the quality and safety of the products delivered. This contribution is especially important 
+when it comes to products that need refrigeration, such as vaccines and biological products. 
+Blockchain systems also improve security and authenticity of the products delivered, tacking 
+the issue of distribution of falsified drugs. 
+• Precision medicine and medical records: the access of multiple players in healthcare to medical 
+records of a patient in real time not only can improve the care provided, and can also potentiate the 
+uses of precision medicine, since the patient medical records and genomic data can by easy shared 
+between doctors and researchers. 
+• Data management: Gathering medical records, expenses and reports concerning a medical treatment 
+could be time consuming and an extensive process. Blockchain can improve this field since 
+data sharing would be available and updated by the multiple players making the communication 
+between them more efficient, for example between a hospital and an insurance company. 
+• Electronic prescription: electronic prescription would be improved by blockchain systems, given 
+the ability of the information can be spread throughout the different services such as hospitaldoctor-
+patient-pharmacy. Patient electronic devices can be also updated with app to monitor the 
+adhesion to therapy, giving precious information to the doctor and pharmacist about the success 
+of the treatment in a timely manner. 
+• Regulatory compliance: given the security and data authenticity provided by blockchain systems, 
+regulatory compliance and monitorization of records by the regulatory agencies can be improved 
+and in case of no compliance, actions could be performed in a timely manner. 
+• Research and development: clinical research data throughout every step of a clinical trial could 
+be actively monitored, the information shared between multiple stakeholders have a high classification 
+of security and authenticity, logistical processes can also be improved, such as patient 
+recruitment, payments, consent and authorization, etc. 
+It is clear that Blockchain technology can bring many improvements for the healthcare sector, in 
+fact, by 2022 it is expected that the blockchain market in healthcare sector is valued in $500 million and 
+
+
+Data Security in Clinical Trials Using Blockchain Technology 
+
+
+those investment would be in the clinical trial management, improvement of sharing electronic records 
+and fulfilling regulatory compliance (Hasselgren et al., 2020). 
+
+One of the essential uses of blockchain in the healthcare is, undoubtedly the clinical trials, the 
+theme of this chapter. Specifically, the key features of blockchain technology, such as data provenance, 
+transparency, decentralized transaction validation, and immutability, may contribute to overcome data 
+management issues in clinical trials (Omar, Jayaraman, Salah, Yaqoob, et al., 2020). Areas of clinical 
+trials where blockchain represents an improvement also include patient recruitment, medical data sharing 
+and privacy, data integrity, consent traceability and transparency, as mentioned before (Omar, Jayaraman, 
+Salah, Yaqoob, et al., 2020). 
+
+On the other hand, another important topic in authenticity in clinical trials is related to data management. 
+Data could be altered or lost which could represent a major problem in a clinical trial setting 
+creating an untrustworthy environment. In fact, 80% of the assays submitted to FDA are not reproductible 
+due to the presence of various errors, such as fraud, data misrepresentation, and trial misconduct (Petre 
+& Haï, 2018). This is one of the factors that contributes to data obtained from clinical trials not being 
+immediately made public to key-players. 
+
+Taking all of this into consideration, to further explore the benefits, disadvantages, threats and opportunities 
+of blockchains in clinical trials in data management, a review as conducted to map this information. 
+
+Review Methods 
+
+
+Research Objective 
+
+
+There are several studies reporting the advantages and disadvantages and applicability of blockchains in 
+clinical trials, however the knowledge of those characteristics when applied to data security in clinical 
+trials is lacking. 
+
+The role of this review is to map the current utilization of blockchain systems in clinical trials, particularly 
+the data security managing system and its characteristics, such as applicability, interests of use, 
+limitations and issues, as reported in literature. 
+
+Inthissectionwereportthemethodologyappliedtoconductthisreviewincludingtheselectionprocess. 
+
+Research Protocol 
+
+
+To identify potentially relevant publications a search was conducted on November 8th, 2020 in the fol
+
+
+lowing online bibliographic databases: PubMed, Science Direct and Google Scholar. 
+
+Backward-reference list checking was conducted to identify other relevant references. 
+
+The search was conducted using several combination of search terms in order to establish first the 
+amount of information available related to blockchain and to clinical trials or health care sector, and 
+secondly directly related to data security provided by a blockchain in a clinical trial setting. Therefore, 
+several search terms were used and ultimately the search words used to retrieve studies from databases 
+has: “blockchain” AND “Healthcare” AND “Clinical trials” AND “data security”. 
+
+Data Base Selection Criteria 
+
+
+Search was conducted simultaneously in three data bases: PubMed, Science Direct and Google Scholar. 
+
+
+Data Security in Clinical Trials Using Blockchain Technology 
+
+
+Pubmed database was considered, as it is one of the leading databases in healthcare content. Google 
+Scholar database was chosen in order to bring different background and variability content sources. Science 
+Direct database was chosen considering the high percentage of peer-review content. 
+
+Eligibility Criteria 
+
+
+In this review were included studies and review studies that reported the advantages and disadvantages 
+of use of blockchain in clinical trials particularly in the data security optic. For the purpose of this study 
+were excluded studies that merged blockchain and other technologies not related to the theme of this 
+chapter and that targeted blockchain uses in healthcare other than clinical trials. 
+
+Information from magazines with peer-review, newspapers, conference abstracts and book chapters 
+were excluded from this review. Were included studies from 2017 onwards since no relevant information 
+before that year has found in the literature associated with blockchain and its uses in clinical trials. 
+
+Additionally, studies that were written in languages other than French and English were excluded. 
+This criteria was established given the authors proficiency in the selected languages. 
+
+The study eligibility criteria are described in Table 1. 
+
+Table 1. Eligibility criteria of studies included in this work 
+
+Inclusion Criteria 
+Studies that address benefits and/or threats of blockchain in Clinical trials 
+Studies from 2017 onwards 
+Studies reported in English or French 
+Information from magazines, newspapers, conference abstracts and book chapters 
+Exclusion Criteria Studies that merged blockchain and other technologies not relevant to the theme of the 
+chapter 
+Studies that targeted other uses of blockchain in healthcare other than clinical trials 
+
+Study Selection Process 
+
+
+As mentioned above, studies were retrieved from multiple bibliographic databases resulting from a 
+process divided into four phases: (i) screening phase, were multiple search words were used to establish 
+the amount of studies related to the theme; (ii) identification phase, were the citations were retrieved 
+from the several databases; (iii) screening phase, where titles and abstracts of citations were screened to 
+select or exclude articles; (iv) duplicates screening phase, were the citations whom were considered as 
+relevant during screening phase were checked for duplicates; (v) eligibility phase, where the full-texts 
+of articles were read to assess their relevancy to this study. 
+
+Data Extraction and Data Synthesis 
+
+
+A summary of the included studies related to the theme of this review were extracted from the selected 
+citations and the articles were categorized by the type of publication. The year of publication was also 
+extracted from the articles. 
+
+
+Data Security in Clinical Trials Using Blockchain Technology 
+
+
+Search Findings 
+
+
+The number of articles retrieved and consequent process of studies search and selection is described in 
+Figure 1. 
+
+Figure 1. Study selection and research process. 
+
+
+As a result from the initial search with search terms “blockchain” AND “healthcare”, a total of 24692 
+results were obtained gathered from the three bibliographic databases used. After a combination of different 
+search words, as described in Table 2, the search words used (“blockchain” AND “healthcare” 
+AND “clinical trials” AND “data security”) produced a total of 52 records to be screened considering 
+the inclusion and exclusion criteria mentioned above. Therefore, these records were screened through 
+their title and abstract and 22 were excluded considering the fact they were not related to the theme or 
+not scientific content. Afterwards, the records were checked for duplicates and 11 records were deleted. 
+A number of 19 records were gathered to check its full text for eligibility and 17 records were considered 
+relevant. 
+
+Backward reference was partially conducted to gather additional studies relevant to the theme. Overall, 
+20 studies were included in this review. 
+
+
+Data Security in Clinical Trials Using Blockchain Technology 
+
+
+Table 2. Results obtained using the several search terms across the three bibliographic databases 
+(Pubmed, Science Direct and Google Scholar) 
+
+Search Terms Number of Results (n) 
+“blockchain” AND “Healthcare” 24692 
+“blockchain” AND “Healthcare” AND “Clinical trials” 1534 
+“blockchain” AND “Healthcare” AND “Clinical trials” AND “security” 1130 
+“blockchain” AND “Healthcare” AND “Clinical trials” AND “data security” 52 
+“blockchain” AND “clinical trials” 191 
+
+List of the Articles Reviewed 
+
+
+• Abu-elezz et al., (2020) -The benefits and threats of blockchain technology in healthcare: A scoping 
+review 
+• Angeletti et al., 2017 -The role of blockchain and IoT in recruiting participants for digital clinical 
+trials 
+• Benchoufi et al., 2017 -Blockchain protocols in clinical trials: Transparency and traceability of 
+consent 
+• Benchoufi et al., 2019 -From Clinical Trials to Highly Trustable Clinical Trials: Blockchain in 
+Clinical Trials, a Game Changer for Improving Transparency? 
+• Benchoufi & Ravaud, 2017. Blockchain technology for improving clinical research quality. 
+• Choudhury et al., 2019 -A Blockchain Framework for Managing and Monitoring Data in Multi-
+Site Clinical Trials 
+• Drosatos & Kaldoudi, (2019) -Blockchain Applications in the Biomedical Domain: A Scoping 
+Review 
+• Hirano et al., 2020 -Data Validation and Verification Using Blockchain in a Clinical Trial for 
+Breast Cancer: Regulatory Sandbox 
+• Kamel Boulos et al., 2018 -Geospatial blockchain: promises, challenges, and scenarios in health 
+and healthcare 
+• Mackey et al., 2019 -‘Fit-for-purpose?’ – challenges and opportunities for applications of blockchain 
+technology in the future of healthcare 
+• Maslove et al., 2018 -Using Blockchain Technology to Manage Clinical Trials Data: A Proof-of-
+Concept Study 
+• Monrat et al., 2019 -A survey of blockchain from the perspectives of applications, challenges, 
+and opportunities. 
+• Omar, Jayaraman, Salah, Simsekler, et al., 2020 -Ensuring protocol compliance and data transparency 
+in clinical trials using Blockchain smart contracts 
+• Omar, Jayaraman, Salah, Yaqoob, et al., 2020 -Applications of Blockchain Technology in Clinical 
+Trials: Reviewand Open Challenges 
+• Petre & Haï, 2018 -Opportunities and challenges of blockchain technology in the healthcare 
+industry 
+• Radanovic et al., 2018 - Opportunities for Use of Blockchain Technology in Medicine 
+
+Data Security in Clinical Trials Using Blockchain Technology 
+
+
+• Tandon et al., 2020 -Blockchain in healthcare: A systematic literature review, synthesizing framework 
+and future research agenda 
+• Wong et al., 2019 -Prototype of running clinical trials in an untrustworthy environment using 
+blockchain 
+• Yan Zhuang et al., 2019 -Applying Blockchain Technology to Enhance Clinical Trial Recruitment 
+• Yu Zhuang et al., 2018 -Applying Blockchain Technology for Health Information Exchange and 
+Persistent Monitoring for Clinical Trials 
+Characteristics of the Selected Studies 
+
+
+As presented in Figure 2, more than 50% of the studies selected for this article were published afterwards 
+the year of 2019 (5 published in 2019 and 6 published in 2020, therefore 11 of 19 studies selected). Additionally, 
+4 of the selected studies were published in 2018 and only 3 studies were published in 2017. 
+
+Figure 2. Distribution of included studies by year of publication. 
+
+
+As presented in Figure 3 the selected studies for this article have a heterogenous distribution if the 
+type of publication is considered. In fact, 3 of the studies were classified as articles, 4 as research articles, 
+4 as reviews, 1 as a paper, 2 as editorials, 1 as method article, 4 as research articles and 3 as proof of 
+concept work. 
+
+
+Data Security in Clinical Trials Using Blockchain Technology 
+
+
+Figure 3. Study type of publication 
+
+
+Summary of the Included Studies 
+
+
+Several citations enumerate the major benefits and threats of blockchain technology application in a 
+healthcare system, including in a clinical trial setting (Abu-elezz et al., 2020) (Drosatos & Kaldoudi, 
+2019) (Petre & Haï, 2018) (Tandon et al., 2020) (Choudhury et al., 2019) (Omar, Jayaraman, Salah, 
+Yaqoob, et al., 2020) (Angeletti et al., 2017) (Kamel Boulos et al., 2018)(Mackey et al., 2019) (Tandon 
+et al., 2020)(Benchoufi et al., 2017; Yan Zhuang et al., 2019) (Yu Zhuang et al., 2018). They reflect 
+that this technology adds significant value through improved efficiency, access control, technological 
+advancement, privacy protection, and security of data management processes. However, in general, there 
+are also some disadvantages mentioned related to high implementations costs, need for robust systems 
+and specialized human resources, difficulty of scalability and data security and protection issues. 
+
+Several studies develop and implement blockchain systems in hypothetical real-life clinical trials. 
+Omar, Jayaraman, Salah, Simsekler, et al (2020) propose a blockchain-based framework for clinical trial 
+data management, using Ethereum smart contracts, concluding that the use of these systems assures data 
+integrity, transparency, and traceability of the process in a clinical trial. Wong et al (2019) proposes a 
+blockchain-based system to make data collected in the clinical trial process immutable, traceable, and 
+potentially more trustworthy, and its resilience to data tampering. Maslove et al. (2018) explores the role 
+of blockchain in supporting clinical trials data management and develop a proof-of-concept implementation 
+of a patient-facing and researcher-facing system. Hirano et al (2020) validate a system that enables 
+the security of medical data in a clinical trial using blockchain technology. 
+
+Tandon et al (2020) addresses the concerns for the improvement of regulatory compliance and security. 
+Several important aspects are highlighted, particularly that further work needs to be done to address 
+blockchain systems vulnerabilities and robustness, data privacy and authentication in shared storages. 
+
+
+Data Security in Clinical Trials Using Blockchain Technology 
+
+
+BLOCKCHAIN IN CLINICAL TRIALS 
+
+
+As mentioned before, the interest of the applicability of blockchain systems in the healthcare sector has 
+been increasing since 2016. In fact, this growing interest was also palpable through the research made 
+for this chapter in Pubmed database, using the search words “blockchain” AND “healthcare” 153 results 
+were obtained. This represents an increase of about 139% of the number of citations published in this 
+database since 2018. Additionally, using the search words “blockchain” and “clinical trials” in Pubmed 
+database 19 citations were obtained, which also represents an increasing number of citations since 2018 
+related to clinical trials and blockchain systems. 
+
+Blockchain Advantages and Disadvantages in Clinical Trials 
+
+
+Clinical trials require data and information to be well organized and categorized for the submission of 
+the findings to the regulatory agency for the approval of the drug in test. Such compliance can be time 
+consuming and resource consuming considering the amount of data, number of individuals and entities 
+involved, and therefore it is a process particularly prone to human and system errors. 
+
+Blockchain can be the solution for the majority of errors that happen in clinical trials. Therefore, this 
+technology can solve human errors such as: inconsistent data entry (transcription and transposition errors) 
+and missing signatures/authorizations and system errors such as loss of data. Having a blockchain 
+system that allows, in real time, the users in the network to verify, identify and solve the errors, can be 
+a major improvement in clinical trials. 
+
+In fact, the most pressing challenges in clinical trials include access and management of clinical trial 
+data; data integrity and provenance for clinical trial processes for regulatory purposes; updating and 
+maintaining patient consent; and patient recruitment and enrolment, reproducibility of results, protocol 
+compliance and data sharing (Mackey et al., 2019) (Omar, Jayaraman, Salah, Simsekler, et al., 2020). 
+
+Blockchain systems have the ability of transforming this process by revolutionizing the way data is 
+stored, transmittedand managedthroughoutthe networkof participants,investigatorsand entitiesengaged 
+in a clinical trial. Therefore, blockchain can lead to the structuration of a global community gathering 
+all the key player involved in a clinical trial setting, such as researchers and patient communities, social 
+networks and Internet of Things data flows with features of individual granularity, decentralization and 
+security and with transparent interactions to ensure easier and more transparent analysis (Benchoufi & 
+Ravaud, 2017). An additional asset is the possibility of a closer monitorization of patient health data 
+tracking and health status (Abu-elezz et al., 2020). 
+
+Disadvantages of blockchain system in clinical trials are related to organizational difficulties, such 
+as installations and transactions costs, operability issues and the need of specialized technical resources 
+to manage these systems scalability issues, authorization and security issues, high energy consumption, 
+and slow processing speeds. It is important to emphasize that the interoperability is also one of the 
+major challenges for the blockchain adoption due to the lack of trust between healthcare organizations 
+and lesser number of IT (Information Technology) professionals available to implement the technology. 
+Lack of sufficient technical skills while implementing blockchain technologies may lead to disastrous 
+consequences (Abu-elezz et al., 2020). 
+
+The principal advantages and disadvantages of the utilization of blockchain technology in clinical 
+trials is summarized in Table 3. 
+
+
+Data Security in Clinical Trials Using Blockchain Technology 
+
+
+Table 3. Advantages and disadvantages of blockchain technology used in clinical trials 
+
+Advantages 
+Monitorization 
+Transparency 
+Immutability 
+Decentralization 
+Real-time consent 
+Real time access to all key players involved 
+General access to all key players (need to constrain access depending on its user) 
+Implementation system difficulties 
+Need of specialized technical resources 
+Disadvantages High levels of protection needed 
+Implementation costs 
+Scalabilities difficulties 
+Appropriate software and hardware 
+
+Advantages of Blockchain Applied to Data Security in Clinical Trials 
+
+
+Considering the four main assets of blockchain systems in a clinical trial setting monitorization, transparency, 
+immutability, and decentralization, blockchain technology might also prove to be useful in supporting 
+or even supplanting the traditional data infrastructure used in clinical trials. Blockchain enables 
+to establish a permanent record agreed upon by all participating parties, therefore has a tremendous 
+potential to mitigate some of the threats related to data validity. 
+
+Taking all of this into consideration, in a real-world setting blockchain technology might have the 
+following characteristics in terms of data security: 
+
+• Establish a more difficult precedent to falsifications or adulterations of data, since every transaction 
+is monitored, time-stamped, transparent and in real time; 
+• Enables permanent recordings, a very desirable asset for clinical trial auditing; 
+• More compatibility between the results presented to the regulatory agency and later published in 
+scientific publications; 
+• More efficient volunteer recruitment and protocol attribution; 
+• More accurate access and recording of data; 
+• Overall, less time consuming and more, efficient process of data recording, processing and storage. 
+Ultimately, blockchain systems in terms of data security, specifically, address the questions of data 
+validity, integrity and reproducibility and therefore stands to achieve more confidence and veracity in 
+the results obtained in a clinical trial (Maslove et al., 2018). 
+
+
+Data Security in Clinical Trials Using Blockchain Technology 
+
+
+Types of Blockchain and Their Applicability in Clinical Trials 
+
+
+Blockchain can be applied in the healthcare sector due to its many characteristics such as immutability, 
+decentralization, traceability and transparency (Abu-elezz et al., 2020). This technology has a potential 
+in protecting sensitive information such as patient related information (medical records and personal 
+information). Therefore, these characteristics have the most relevant interest in the clinical trials setting. 
+
+The potential of the Blockchain applicability to clinical trials relies on the type of Blockchain technology 
+used. As described by Abu-elezz et al., (2020) there are three different design types considering 
+their access permissions: public (permissionless), private (permissioned) and hybrid blockchains. Public 
+blockchains allow anyone to participate and allow a complete transparent view to anyone participating 
+in it, and there is no control by any single user on identity. On the other hand, private blockchains are 
+only open for those who are invited to join the network, but nevertheless, the process remains transparent 
+for everyone included in the network. Finally, it is important to characterize the third different type of 
+blockchain. Hybrid Blockchains are a type of blockchains that are flexible because they allow the users 
+to choose the data they want to be made available for the public and the data they want to be kept private 
+for them (Abu-elezz et al., 2020) . To be easily understood, they can be seen as a public blockchain where 
+a private network is hosted, where all of the users only have access to the data that is available for them. 
+Taking all of this into consideration, hybrid blockchains associated with smart contracts could represent 
+a solid method to use in a clinical trial setting since it has the possibility to select a specific amount of 
+data to be available or kept private to the public, as previously mentioned (Kamel Boulos et al., 2018). 
+This platform is more flexible compared to other types of blockchain because it enables the consensus 
+mechanisms to be controlled by selected users in a decentralized manner, which in other hand, makes 
+its structure more vulnerable to information (Omar, Jayaraman, Salah, Yaqoob, et al., 2020). 
+
+Smart Contracts 
+
+
+Another major contribution of blockchain technology in a clinical trial setting is the ability to provide in 
+real time consent by the patient to protocol alterations by the sponsor (Petre & Haï, 2018). This process 
+is followed through smart contracts. 
+
+Smart contracts are a type of code that is stored, executed, and verified on a blockchain, and also 
+has the ability to act on clinical data sharing, either through storing the data itself or instructions on 
+who can access that data (Maslove et al., 2018)(Kamel Boulos et al., 2018). Smart contracts can play 
+several roles, including encoding the business logic for an application, ensuring that preconditions for 
+action are met before itis executed, and enforcing permissions for an action. As described by Maslove 
+et al. (2018), smart contracts run on a blockchain, they have unique characteristics compared with other 
+types of software. First, the program itself is recorded on the blockchain, which imparts the blockchain’s 
+characteristic permanence and resistance to censorship. Second, the program can control blockchain 
+assets. Third, the program is executed by the blockchain, meaning it will always execute as written and 
+no one can interfere with its operation. 
+
+Since Smart Contracts all transactions follow rigorous protocols under secure conditions, their use 
+has the possibility to ensure data provenance and create immutable audit trails, and potentially add more 
+integrity and confidence to a clinical trial, by reducing, prevent and detect fraudulent activities and errors 
+(Yu Zhuang et al., 2018). 
+
+
+Data Security in Clinical Trials Using Blockchain Technology 
+
+
+Benchoufi & Ravaud (2017), described a Smart Contract example applied to a clinical trial setting. 
+In their example, each of the clinical trial steps (trial protocol setup, patient enrollment, data collection, 
+trial monitoring, data management, data analysis, study report, diffusion of results) as described in 
+Figure 4, can be chained together in a preceding order, consolidating a transparent trial and preventing 
+a posteriori reconstruction or beautification of data by granting several levels of access. This example 
+represents a piece of code that holds a programmatically written contract between as many parties as 
+needed, without any trusted third party, and that executes algorithmically according to the terms provided 
+by the contracting parties, making the process more automatic, transparent and less prone to falsifications 
+(Benchoufi & Ravaud, 2017). 
+
+Blockchain Systems Protection Against Liabilities 
+
+
+Blockchain technology allows the users to track more closely and in real time, the series of events occurring 
+in clinical trials. This is crucial when we are talking about security and protection. By tracing and 
+controlling the processes of clinical trials, Blockchain can prevent frauds or at least discourage them, 
+because they become traceable and averted. But this technology cannot protect against every threat, 
+such as data invention or data falsification since it only protects the information with time stamps and 
+traceability once the information has entered the system (Benchoufi et al., 2019). 
+
+Other threats to the validity of clinical trials data stand to undermine the veracity of a clinical trial. 
+These threats could be defined as internal, when they occur within the users of a blockchain, or external, 
+when they came from outside the network of blockchain users, for example in a cyber-attack. 
+
+Maslove et al (2018) identified some of these threats. Data can be altered or lost, either accidentally 
+or by nefarious intent; there is a risk that the published analysis is not a true representation of the analysis 
+that was initially planned due for example to lack of monitorization resulting in a bias of the information 
+presented to the regulatory agencies and later published in scientific publications; and lastly, data may 
+be fabricated, manipulated, or duplicated by researchers committing outright fraud. 
+
+Some of the functionalities of the Blockchain technology like timestamping, time-ordering and the 
+smart contracts can define a roadmap, that helps tracking errors and frauds. Clinical trials can benefit a 
+lot from using these roadmaps (Benchoufi et al., 2019). 
+
+Omar, Jayaraman, Salah, Simsekler, et al., (2020) developed a blockchain-based solution and simulated 
+several data mistakes or internal malicious attempts. These were stopped since the recorded data 
+is validated using consensus algorithms resulting in a tamper-proof system. 
+
+As described by Omar, Jayaraman, Salah, Simsekler, et al., (2020) one of the biggest threats to the 
+blockchain technology are the selfish mining external attacks. Blockchains are vulnerable to 51% of 
+these attacks. This generally occurs when malicious blocks are higher than honest blocks in a network. 
+As a result, one of the possibilities is that a new block gets attached to the malicious chain. This strategy 
+is called selfish mining because selfish miners keep their blocks private and reveal them to the public 
+only when the private chain is longer than the current public chain, and thus, it may be accepted by all 
+miners in the network (Omar, Jayaraman, Salah, Simsekler, et al., 2020). 
+
+
+Data Security in Clinical Trials Using Blockchain Technology 
+
+
+SOLUTIONS AND RECOMMENDATIONS 
+
+
+Clinical trials require data and information to be well organized and categorized for the submission of 
+the findings to the regulatory agency for the approval of the drug in test. Such compliance can be time 
+and resource consuming considering the amount of data, number of individuals and entities involved, 
+and therefore it is a process particularly prone to human and system errors. 
+
+In fact, the most pressing challenges in clinical trials include access and management of clinical 
+trial data; data integrity and provenance for clinical trial processes for regulatory purposes; updating 
+and maintaining patient consent; patient recruitment and enrolment, reproducibility of results, protocol 
+compliance and data sharing. 
+
+From the review conducted it is possible to point out that the operational benefits of implementing a 
+blockchain technology to conduct a clinical trial are hardly contestable. Indeed, this technology solves 
+many logistical constrains in terms of data sharing, communication between each involved parties and 
+data storage and traceability. 
+
+Blockchain certainly represent a technology capable of managing and improving the information 
+system in the healthcare sector and, particularly, in the clinical trial area, by allowing a more transparent, 
+real time and authentic process when submitting a new drug for regulatory approval. Blockchain 
+allows several levels of optimization regarding the organization aspects of a clinical trial (number of 
+participants, number of departments and their areas of action) and in an individual level (the patient has 
+more control and monitorization of his own progression), also. 
+
+Reproducibility and data integrity are crucial factors in a clinical trial setting. Regulatory agencies 
+not only shall be able to trace back and identify the players responsible for any information in a clinical 
+trial environment, but also be able to trust the validity of that content. In fact, 80% of the assays submitted 
+to FDA are not reproductible (Petre & Haï, 2018). Blockchain improves the traceability of data and 
+therefore stands to tackle this issue. 
+
+Blockchain offers a valuable contribution in addressing this problem since every transaction is validated 
+using consensus algorithms and identity signatures with identification and date stamps. 
+
+Notwithstanding, blockchain cannot address a problem that still could affect the integrity and veracity 
+of a clinical trial. In fact, if the information itself introduced in a software is wrong or misleading, 
+this technology cannot address this issue. Blockchain, only, can track this wrong data and timestamp it. 
+There is yet a need to find a solution within the design and operational side of a clinical trial to tackle 
+this question. 
+
+Considering the four main assets of blockchain systems in a clinical trial setting, monitorization, 
+transparency, immutability, and decentralization, blockchain technology might also prove useful in supporting 
+or even supplanting the traditional data infrastructure used in clinical trials. Blockchain enables 
+to establish a permanent record agreed upon by all participating parties, therefore has a tremendous 
+potential to mitigate some of the threats related to data validity. 
+
+Disadvantages of blockchain system in clinical trials are related to organizational difficulties, such 
+as installations and transactions costs, operability issues and the need of specialized technical resources 
+to manage these systems scalability issues, authorization, security issues, high energy consumption, and 
+slow processing speeds. 
+
+Overall, this technology has the ability of producing a clinical trial more transparent and tamper 
+proofing by providing authentic validated data, and therefore, producing a more reliable and credible 
+clinical trial. Nevertheless, there are some technical issues that need to be overcome, such as scalability, 
+
+
+Data Security in Clinical Trials Using Blockchain Technology 
+
+
+implementation costs, the need of technical resources and processing difficulties of implementation and 
+operation. Solving all these issues, we can expect blockchain technology to be fully adopted in clinical 
+trials, with substantial improvements. 
+
+FUTURE RESEARCH DIRECTIONS 
+
+
+Work needs to be done to establish the major implications in security data when applying blockchain 
+technology in a real-word clinical trial setting and in generalized conditions of use, since as we move 
+forward through the several phases of a clinical trial more data, more participants and more complexity 
+of results are expected and thereby there is a need of a robust and reliable system to maintain the 
+necessary trust levels to present the findings of a clinical trial to support the process of drug approval 
+to a regulatory agency. 
+
+On a regulatory level, it is also important that key regulatory agencies such as FDA and EMA, provide 
+guidelines to construct a blockchain managing system in clinical trials, in order to establish uniformity 
+between the several systems used by different companies and guarantee the overall compliance with 
+ethical, regulatory and safety requirements of a clinical trial. 
+
+Covid-19 pandemic lockdown revolutionized the use of technology and overall ability to distance 
+and virtual communication in healthcare. Because of the pandemic, in one year, technology evolved 
+exponentially, in a way never seen before. Given this opportunity, the bases of a digital revolution in 
+healthcare are in order. However, it is important to take into consideration the technology literacy of 
+healthcare professionals and volunteers in clinical trials. In fact, in a survey conducted by HSCB to 
+Bitcoin users about Blockchain, 80% of the percentage of consumers that are familiarized with the term 
+didn’t know or fully understand the concept (Radanović & Likić, 2018). Therefore, digital education 
+and technological formation of each player in clinical trials should be a priority to the implementation 
+of blockchain systems. This is essential for the correct adoption of the technology in the clinical trials 
+and if it doesn´t happen, the errors that will occur, can be disastrous. 
+
+On the other hand, considering the high level of investment and the need of technological specialized 
+work force to design and run a blockchain system, investments and grants should be also created to incentivize 
+not only the adoption of these systems, but also to educate specialized work force. There aren´t 
+many specialized professionals that know how to work with this technology and that fully understand it, 
+so, this digital formation must be given to the healthcare professionals, in order to have the best results 
+possible. Of course, this formation involves a large investment, so this must be taken into consideration. 
+
+Lastly, considering the importance and impact of the data stored in a clinical trial not only on a 
+regulatory level but also on a personal level considering the number of volunteers involved, additional 
+work shall also be made to establish the security of a blockchain system applied in a clinical trial setting 
+to external hazards such as cyber-attacks. 
+
+CONCLUSION 
+
+
+Ultimately, blockchain systems represent a technology capable of managing and improving the information 
+organization system in the healthcare sector, specifically in the clinical trial area, by allowing 
+a more transparent, real-time, and exact process when submitting a new drug for regulatory approval. 
+
+
+Data Security in Clinical Trials Using Blockchain Technology 
+
+
+Blockchain allows several optimization levels regarding the organizational aspects of a clinical trial 
+(number of participants, number of departments, and their areas of action) and individual level (the 
+patient has more control and monitorization of his progression). These advantages also reflect data 
+security optic since this technology can produce a more transparent and tamper-proofing clinical trial 
+by providing accurate, validated data, producing more reliable and credible outcomes from the research 
+conducted in a clinical trial. Nevertheless, some technical issues need to be overcome, such as scalability, 
+implementation costs, the need for technical resources, and processing difficulties of implementation 
+and operation of blockchain technology. 
+
+ACKNOWLEDGMENT 
+
+
+This research received no specific grant from any funding agency in the public, commercial, or not-forprofit 
+sectors. 
+
+REFERENCES 
+
+
+Abu-elezz, I., Hassan, A., Nazeemudeen, A., Househ, M., & Abd-alrazaq, A. (2020). The benefits and 
+threats of blockchain technology in healthcare: A scoping review. International Journal of Medical 
+Informatics, 142(August), 104246. doi:10.1016/j.ijmedinf.2020.104246 PMID:32828033 
+
+Agbo, C., Mahmoud, Q., & Eklund, J. (2019). Blockchain Technology in Healthcare: A Systematic 
+Review. Health Care, 7(2), 56. doi:10.3390/healthcare7020056 PMID:30987333 
+
+Angeletti, F., Chatzigiannakis, I., & Vitaletti, A. (2017). The role of blockchain and IoT in recruiting 
+participants for digital clinical trials. 2017 25th International Conference on Software, Telecommunications 
+and Computer Networks, SoftCOM 2017. 10.23919/SOFTCOM.2017.8115590 
+
+Benchoufi, M., Altman, D., & Ravaud, P. (2019). From Clinical Trials to Highly Trustable Clinical Trials: 
+Blockchain in Clinical Trials, a Game Changer for Improving Transparency? Frontiers in Blockchain, 
+2(December), 1–6. doi:10.3389/fbloc.2019.00023 
+
+Benchoufi, M., Porcher, R., & Ravaud, P. (2017). Blockchain protocols in clinical trials: Transparency 
+andtraceabilityofconsent.F1000Research, 6,66.doi:10.12688/f1000research.10531.1PMID:29167732 
+
+Benchoufi, M., & Ravaud, P. (2017). Blockchain technology for improving clinical research quality. 
+Trials, 18(1), 1–5. doi:10.118613063-017-2035-z PMID:28724395 
+
+Chen, Jarrell, Carpenter, Cohen, & Huang. (2019). Blockchain in Healthcare: A Patient-Centered Model. 
+Biomedical Journal of Scientific & Technical Research, 20(3), 15017–15022. PMID:31565696 
+
+Choudhury, O., Fairoza, N., Sylla, I., & Das, A. (2019). A Blockchain Framework for Managing and 
+Monitoring Data in Multi-Site Clinical Trials. ArXiv, 1–13. 
+
+Deloitte. (2020). Intelligent drug discovery About the Deloitte Centre for Health Solutions. Author. 
+
+
+Data Security in Clinical Trials Using Blockchain Technology 
+
+
+Drosatos, G., & Kaldoudi, E. (2019). Blockchain Applications in the Biomedical Domain: A Scoping Review. 
+ComputationalandStructuralBiotechnologyJournal, 17,229–240.doi:10.1016/j.csbj.2019.01.010 
+PMID:30847041 
+
+Hasselgren, A., Kralevska, K., Gligoroski, D., Pedersen, S. A., & Faxvaag, A. (2020). Blockchain 
+in healthcare and health sciences—A scoping review. International Journal of Medical Informatics, 
+134(May), 104040. doi:10.1016/j.ijmedinf.2019.104040 
+
+Hirano, T., Motohashi, T., Okumura, K., Takajo, K., Kuroki, T., Ichikawa, D., Matsuoka, Y., Ochi, 
+E., & Ueno, T. (2020). Data validation and verification using blockchain in a clinical trial for breast 
+cancer: Regulatory sandbox. Journal of Medical Internet Research, 22(6), 1–21. doi:10.2196/18938 
+PMID:32340974 
+
+Hussien, H. M., Yasin, S. M., Udzir, S. N. I., Zaidan, A. A., & Zaidan, B. B. (2019). A Systematic Review 
+for Enabling of Develop a Blockchain Technology in Healthcare Application: Taxonomy, Substantially 
+Analysis, Motivations, Challenges, Recommendations and Future Direction. Journal of Medical Systems, 
+43(10), 320. Advance online publication. doi:10.100710916-019-1445-8 PMID:31522262 
+
+Kamel Boulos, M. N., Wilson, J. T., & Clauson, K. A. (2018). Geospatial blockchain: Promises, challenges, 
+and scenarios in health and healthcare. International Journal of Health Geographics, 17(1), 
+1–10. doi:10.118612942-018-0144-x PMID:29973196 
+
+Mackey, T. K., Kuo, T. T., Gummadi, B., Clauson, K. A., Church, G., Grishin, D., Obbad, K., Barkovich, 
+R., & Palombini, M. (2019). “Fit-for-purpose?” -Challenges and opportunities for applications of 
+blockchain technology in the future of healthcare. BMC Medicine, 17(1), 1–17. doi:10.118612916-0191296-
+7 PMID:30914045 
+
+Maslove, D. M., Klein, J., Brohman, K., & Martin, P. (2018). Using Blockchain Technology to 
+Manage Clinical Trials Data: A Proof-of-Concept Study. JMIR Medical Informatics, 6(4), e11949. 
+doi:10.2196/11949 PMID:30578196 
+
+Meunier, S. (2018). Blockchain 101: What is Blockchain and How Does This Revolutionary Technology 
+Work?WhatisBlockchainandHowDoesThisRevolutionaryTechnologyWork?In TransformingClimate 
+FinanceandGreenInvestmentwithBlockchains.ElsevierInc.doi:10.1016/B978-0-12-814447-3.00003-3 
+
+Monrat, A. A., Schelén, O., & Andersson, K. (2019). A survey of blockchain from the perspectives of 
+applications, challenges, and opportunities. IEEE Access: Practical Innovations, Open Solutions, 7, 
+117134–117151. doi:10.1109/ACCESS.2019.2936094 
+
+Omar, I. A., Jayaraman, R., Salah, K., Simsekler, M. C. E., Yaqoob, I., & Ellahham, S. (2020). Ensuring 
+protocol compliance and data transparency in clinical trials using Blockchain smart contracts. BMC 
+Medical Research Methodology, 20(1), 1–17. doi:10.118612874-020-01109-5 PMID:32894068 
+
+Omar, I. A., Jayaraman, R., Salah, K., Yaqoob, I., & Ellahham, S. (2020). Applications of Blockchain 
+Technology in Clinical Trials: Review and Open Challenges. Arabian Journal for Science and Engineering. 
+Advance online publication. doi:10.100713369-020-04989-3 
+
+Petre, A., & Haï, N. (2018). Opportunités et enjeux de la technologie blockchain dans le secteur de la 
+santé. Medecine Sciences, 34(10), 852–856. doi:10.1051/medsci/2018204 PMID:30451661 
+
+
+Data Security in Clinical Trials Using Blockchain Technology 
+
+
+PwC. (2018). A Prescription for Blockchain and Healthcare: Reinvent or be Reinvented. PriceWaterhouseCoopers, 
+19. www.pwc.com/us/en/health-industries.html%0A© 
+
+Radanović, I., & Likić, R. (2018). Opportunities for Use of Blockchain Technology in Medicine. Applied 
+Health Economics and Health Policy, 16(5), 583–590. doi:10.100740258-018-0412-8 PMID:30022440 
+
+Smetanin, S., Ometov, A., Komarov, M., Masek, P., & Koucheryavy, Y. (2020). Blockchain evaluation 
+approaches: State-of-the-art and future perspective. Sensors (Switzerland), 20(12), 1–20. 
+doi:10.339020123358 PMID:32545719 
+
+Tan, L., Tivey, D., Kopunic, H., Babidge, W., Langley, S., & Maddern, G. (2020). Part 2: Blockchain 
+technology in health care. ANZ Journal of Surgery, 90(12), 2415–2419. doi:10.1111/ans.16455 
+PMID:33236489 
+
+Tandon, A., Dhir, A., Islam, N., & Mäntymäki, M. (2020). Blockchain in healthcare: A systematic literature 
+review, synthesizing framework and future research agenda. Computers in Industry, 122, 103290. 
+Advance online publication. doi:10.1016/j.compind.2020.103290 
+
+Wong, D. R., Bhattacharya, S., & Butte, A. J. (2019). Prototype of running clinical trials in an untrustworthy 
+environment using blockchain. Nature Communications, 10(1), 1–8. doi:10.103841467-01908874-
+y PMID:30796226 
+
+Zhuang, Y., Sheets, L. R., Shae, Z., Chen, Y. W., Tsai, J. J. P., & Shyu, C. R. (2019). Applying Blockchain 
+Technology to Enhance Clinical Trial Recruitment. AMIA ... Annual Symposium Proceedings. AMIA 
+Symposium, 2019, 1276–1285. 
+
+Zhuang, Yu., Sheets, L., Shae, Z., Tsai, J. J. P., & Shyu, C. R. (2018). Applying Blockchain Technology 
+for Health Information Exchange and Persistent Monitoring for Clinical Trials. AMIA ... Annual 
+Symposium Proceedings. AMIA Symposium, 2018, 1167–1175. 
+
+KEY TERMS AND DEFINITIONS 
+
+
+Blockchain: A decentralized, distributed ledger technology that records the provenance of a digital 
+asset. 
+
+Clinical Trial: A research study performed in people that are aimed at evaluating a medical, surgical, 
+or behavioral intervention. 
+
+Data Security: The process of protecting data from unauthorized access and data corruption throughout 
+all lifecycle. 
+
+Decentralization: The transfer of control of an activity or organization to several local offices or 
+authorities rather than one single one. 
+
+Immutability: The state of not changing or being unable to be changed. 
+
+Traceability: The quality of having an origin or course of development that may be found or followed 
+throughout all lifecycle. 
+
+Transparency: The quality of operating in such a way that it is easy for others to see what actions 
+or changes are performed. 
+
+

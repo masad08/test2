@@ -1,0 +1,412 @@
+A Framework Integrating Internet of Things and Block-
+chain in Clinical Trials Reverse Supply Chain 
+
+Yvonne Badulescu1,2[0000-0002-8823-0016] and Naoufel Cheikhrouhou2[0000-0003-2497-2528] 
+
+1 Faculty of Business and Economics, University of Lausanne, Switzerland 
+
+2 Geneva School of Business Administration, University of Applied Sciences Western Switzer-
+land (HES-SO), Rue de la Tambourine 17, 1227 Carouge, Switzerland 
+yvonne.badulescu@hesge.ch 
+
+naoufel.cheikhrouhou@hesge.ch 
+
+ 
+
+Abstract. Efficiency and resilience of the clinical trials supply chain are of particular prevalence 
+in the current global context. The unique characteristic of the reverse logistics flow in the supply 
+chains for clinical trials is the foundation for the digital transformation framework presented in 
+this paper. This paper proposes a novel framework that integrates internet of things (IoT) and 
+blockchain technology for the reverse logistics supply chain for clinical trials. The framework is 
+implemented in a Contract Research Organisation operating clinical trials in Europe and North 
+Africa and results are discussed. The main contribution of the proposed novel framework is the 
+integration and interaction of both IoT and blockchain in a reverse logistics process. 
+
+Keywords: IoT, Blockchain, Reverse Logistics, Clinical Trials. 
+
+1 Introduction 
+
+Efficient, effective, and secure logistics processes for clinical trials is essential for the 
+advancement and development of improved medical treatments, pharmaceuticals, and 
+vaccines. Clinical trials are organised and run by contract research organisations (CRO) 
+and have a characteristic reverse logistics supply chain that requires a high level of 
+confidentiality and security. The reverse logistics process of a clinical trials supply 
+chain is a unique context for digital transformation. Reverse logistics using internet of 
+things (IoT) devices and blockchain in the logistics process can generate new data, such 
+as additional real-time tracking and traceability capabilities as well as temperature mon-
+itoring and the possibility to alert logistics providers of immediate issues. Putting this 
+into a blockchain based system can create a full unchangeable record of the clinical trial 
+supply chain transactions. 
+
+To date, blockchain and IoT devices have not been considered together in the reverse 
+logistics process of CRO operating clinical trials. The current technological extent of 
+blockchain in CRO is limited to document sharing ensuring the information security of 
+the patient recruitment process and medical records. This highlights the importance of 
+tracking and tracing the location of the incoming shipments, as well as the condition of 
+its contents, to optimise the complementary processes in CRO such as the arrival logis-
+tics area, re-distribution, and scheduling laboratory testing to support the resilience of 
+the reverse logistics process. 
+
+This paper proposes a framework of a reverse logistics clinical trials supply chain 
+that integrates digital technology, in the form of blockchain and IoT, into the logistics 
+
+
+process. The paper is structured in the following way: the next section reviews the lit-
+erature of the use of IoT and blockchain in CRO; section 3 presents the proposed frame-
+work; section 4 presents the results of the framework implementation in a real CRO; 
+and finally, section 5 concludes the paper including the limitations of the proposed so-
+lution and suggested future. 
+
+2 Literature Review 
+
+Reproducibility, data sharing, personal data privacy, traceability concerns and patient 
+and investigators enrolment in clinical trials are big medical challenges for contempo-
+rary clinical research and have a direct impact on the supply chain [1]. Although tech-
+nological integration is most prevalent in other industries, there have been several ap-
+plications and research related to blockchain which is progressively edging toward the 
+healthcare field [2–4]. 
+
+IoT devices are already prevalent in the clinical trials industry. [5] highlighted the 
+importance of IoT devices in both recruiting participants in clinical trials and patients’ 
+follow-up process. However, a previous study by [6] showed that smart wearables in 
+many cases have limited capabilities for monitoring, signal processing, and communi-
+cation due to operating in uncontrolled environments. Due to these constraints, apply-
+ing standard security and privacy requirements is extremely challenging. [7] provide a 
+proof-of-concept study of a digital health application enabling the recruitment process 
+in clinical trials by using IoT data and blockchain. The results show that the combina-
+tion of these technologies can be implemented to provide a robust digital clinical trials 
+information system. 
+
+In terms of the use of blockchain in transportation systems, [8] study the use of 
+blockchain in intelligent transportation systems (ITS) which and conclude that block-
+chain represents the future of autonomous transportation systems such as ride-sharing 
+and taxi services [9], and [10] develop an approach to securely share information in the 
+transportation of dangerous goods using Smart Contracts based on blockchain technol-
+ogy. Blockchain aids with the secure storage of transportation documents, and facili-
+tates the custom documents which increases efficiency of inspections and consequently 
+reduces overall lead-time [11]. [12] explore the digital transformation of logistics doc-
+umentation by smart contracts and blockchain technology via analysis of the literature 
+and use cases from industry. They find that logistics providers are digitalising the doc-
+umentation in the logistics process to increase transparency, to reduce the associate time 
+and cost related to preparing paper-based documentation, which is highly prone to 
+counterfeit and human errors, and to facilitate trade documents with customs authorities 
+for the transportation and tracking of shipments across borders. 
+
+Logistics in a supply chain can be supported using Smart Contracts based on block-
+chain technology [13]. Suppliers search for transportation partners which are in the 
+blockchain and linked by Smart Contracts that outline the terms and conditions as well 
+as fees, payment terms and shipping times. Smart Contracts which are stored in block-
+chains can decrease administration and service costs as they can be automatically trig-
+ger the logistics activities in a decentralised way as well as improve efficiency in pay-
+ment of suppliers to transportation partners based on the pre-defined conditions in the 
+
+
+contract [13]. [14] develop a system architecture and a software prototype tested on the 
+Ethereum test network for the use of Smart Contracts based on blockchain for the fair 
+exchange of goods between suppliers and customers, and [15] develop a framework for 
+using blockchain and smart contracts in the pharmaceutical supply chain which covers 
+logistics processes, supplier transactions, tracking and tracing of shipments, quality 
+monitoring of shipments, among others. They test the use of Smart Contracts for the 
+real time tracing by storing the sequence of timestamps during the logistics process and 
+quality monitoring of shipments. [16] propose a Smart Logistics solution based on 
+Smart Contracts with a focus on transportation of dangerous goods which includes sup-
+plier recommendation, contract negotiation, condition monitoring via IoT devices and 
+payment to suppliers. Their Smart Contract is on a cloud-based system which deploys 
+the agreed upon Smart Contract on an Ethereum Virtual Machine which executes and 
+monitors the details in the Smart Contract. They develop a prototype and find that the 
+proposed architecture allows for quicker payments to suppliers and updated supplier 
+ratings based on the details in the Smart Contracts. 
+
+Traceability accounts as one of the top issues to track the error back to its original 
+source and is currently lacking in the traditional clinical trials database systems [17]. 
+Blockchain technologies can enforce a high level of transparency, traceability and con-
+trol over the interconnected processes in clinical trials’ supply chains [18], however, in 
+this regard, very little research exists. [19] propose a 4 components blockchain platform 
+architecture for clinical trial and precision medicine built on top of the traditional block-
+chain to achieve reliable and safe transaction. [20] propose a private, permissioned 
+Ethereum blockchain network maintained by regulators, the pharmaceutical industry 
+and CRO to be used in parallel with traditional clinical data management systems in 
+order to increase trust in the data they hold and the credibility of trials findings. 
+[21] explore the role of blockchain in clinical trials data management and develop a 
+proof-of-concept of a patient-facing and researcher-facing system based on Smart Con-
+tracts. The system uses a web-based interface to allow users to run trials-related Smart 
+Contracts on an Ethereum network allowing patients to grant researchers access to their 
+data and allowing researchers to submit queries for off-chain data. [22] develops a 
+proof-of-concept study aiming to implement a process allowing the collection of pa-
+tients’ informed consent, which is bound to protocol revisions, storing and tracking the 
+consent in a secure, unfalsifiable and publicly verifiable way, and enabling the sharing 
+of this information in real time. [23] design workflows for using smart contracts in 
+healthcare and clinical trials which focus on cost and healthcare optimisation. 
+
+Although IoT and blockchain are used independently for patient follow-up in the 
+clinical trials industry, there is an opportunity to extend these technologies to the re-
+verse logistics supply chain to improve the overall resilience of material and infor-
+mation flows. It has been highlighted in the literature that both IoT and blockchain are 
+not only beneficial in many situations, but also complementary of each other. The fol-
+lowing section proposes a novel framework that addresses the integration of both tech-
+nologies to handle material and information flows which show to improve the digital 
+activities in the reverse logistics clinical trials supply chain. 
+
+
+3 Proposal for a New Framework 
+
+Currently, the existing logistics processes in clinical trial companies use physical logis-
+tics-related documentation transfer. In addition, the visibility provided by digital docu-
+mentation based on blockchain allow CRO to prioritise shipments based on information 
+collection at the source, track and trace shipments and the environmental conditions via 
+the installed IoT devices. This, in turn, allows them to better schedule arrivals, labora-
+tory testing, redistribution of packaging, and decreased supply chain costs due to im-
+proved planning and prioritisation. 
+
+The specific nature of a clinical trials supply chain that works in a reverse logistics 
+flow, requiring a high level of security, creates a unique context for the proposed frame-
+work development. 
+
+The proposed framework, shown in Fig. 1. integrating IoT and blockchain in clinical 
+trials consists of 1) tracking and tracing of location and environmental conditions via 
+IoT devices and a communication infrastructure; and 2) secure digital logistics docu-
+ment sharing between supply chain stakeholders based on blockchain technology and 
+infrastructure. 
+
+3.1 IoT Integration 
+
+The implementation of real-time sensors can eliminate many manual tasks and allow 
+rapid reaction in case of a problem. A sensor could quickly detect a problem during the 
+journey, sending an alert to the logistician. After looking at the data transmitted by the 
+sensor, the logistician could instruct the carrier to continue the delivery or to proceed 
+with an intervention on the shipment. The delivery process can then be interrupted to 
+investigate the problem and restart the delivery process if necessary. This eliminates 
+the need to wait for the package to arrive and be examined after delivery to determine 
+if the sample is usable. 
+
+The IoT devices are physically attached to the packages to monitor geo-localization 
+and temperature and connected to relay communication nodes that connect to a base 
+station which send the information to the clinical trials company which is monitoring 
+the shipment. 
+
+ 
+
+3.2 Blockchain Implementation in Digital Documentation 
+
+The logistics documentation is accompanied by a digital version based on blockchain 
+which is a transaction protocol that executes, controls, and documents each event in the 
+reverse logistics flow of the clinical trials supply chain based on the terms of the Smart 
+Contract with the transporters. The information is stored and shared on various servers 
+globally based on the blockchain process. This information is then accessible by the 
+clinical trials company logistics management team. 
+
+Blockchain implementation to track and trace logistics and transportation docu-
+ments, which will allow those with the right to obtain the information about the various 
+actions taken on the transportation documents, for example, who was the last person to 
+view the document or the time when the document was opened. The documents concern 
+the sending and receiving of the clinical trials products. An open-source project 
+
+
+“HyperLedger”, used as a framework for the private blockchain which allows the use 
+of Smart Contracts, has consensus algorithms to validate transactions and maintains 
+confidentiality due to access restrictions. However, the storage capacity is limited and 
+the blockchain does not store the documents themselves, therefore a secure cloud stor-
+age is used which is compatible with the blockchain system. 
+
+ 
+
+Shape
+Description automatically generated with medium confidence
+Fig. 1. Framework integrating IoT and blockchain in clinical trials. 
+
+The structure of the “HyperLedger” blockchain consists of several nodes (participants) 
+which perform different roles: Peers: members of the organization participating in the 
+blockchain network; Endorser peer: This type of node performs two important func-
+tions within the blockchain. These are the validation of transactions, thus verifying the 
+certifications of the participant who sends a transaction request and the execution of the 
+smart contract. Once the two previous tasks are completed, the endorser peer can ap-
+prove or reject a transaction; Ordered peer or ordering node: this is the node that will 
+receive the block and add it to the blockchain. In addition, this node will forward the 
+approved blocks to the network participants. We define the components using the “Hy-
+perLedger” Business Network Definition model: 1) Network Participants: Carriers, Cli-
+ents, CRO; 2) Assets: Transportation documents for goods; 3) Transactions: Transmis-
+sion of transport documents when goods are sent and received as well as Smart Con-
+tracts. These documents digitally accompany the goods throughout the transport and 
+are exchanged between the network participants. 
+
+The process begins by the clinical trials company connecting to the platform using 
+the login information and obtain their certificate that they can use the blockchain. The 
+system creates certificates for all new users. Then the user uploads the document to the 
+platform which is automatically saved in the external cloud storage. A request will then 
+be sent to the endorser peer or approved node, to check whether the user uploading the 
+document to the network is certified and has the authorisation to perform this action. 
+Once the transaction is validated, the approved node will call the ordered peer to add 
+
+
+the new block to the blockchain and then distribute it to all the nodes in the network. 
+After completion of the verification and validation steps, the document is indefinitely 
+saved on the external cloud storage. 
+
+The framework integrating IoT and blockchain in a reverse logistics clinical trials 
+supply chain is implemented in a real case and the results are presented and discussed 
+in the next section. 
+
+4 Results of implementation 
+
+The framework is applied to a CRO with headquarters in Switzerland that specializes 
+in clinical trials and plans to integrate IoT devices onto the shipments and digital logis-
+tics documentation based on blockchain in their reverse logistics supply chain. Fig. 2. 
+illustrates the business processes related to the outgoing and incoming logistics of the 
+reverse logistics supply chain for clinical trials implemented in the CRO. Contrary to 
+the typical forward material and information flow of a supply chain, Fig. 2. starts with 
+the outgoing logistics process first in which the CRO requests the medical samples for 
+the clinical trials to be sent to the clients / investigators. They first request the shipment 
+to be picked up from their depots by the transporter. Upon the reception of the order 
+request, the transporter creates and shares a contract proposal to the clinical trials com-
+pany, which accepts or rejects it. Each step of the digital contract process is based in 
+the HyperLedger blockchain to record each action of the peers. If the contract is ac-
+cepted, the shipment is picked up and delivered to the clients. 
+
+The incoming logistics process begins with the clients requesting the pickup of the 
+clinical samples to the transporter. The packaging wears an IoT device monitoring the 
+real-time temperature of the samples and their geo-localisation and sends an alert to the 
+transporter in the occurrence of a problem, which then relays the information to the 
+CRO. The CRO then makes a logistics decision based on the alert information and the 
+geo-localisation, which can include reducing the transportation priority or changing the 
+rest of the transportation journey to express and communicates this to the transporter 
+which makes the necessary changes to the delivery as per the pre-agreements made in 
+the Smart Contract. 
+
+The implementation of the new framework that integrates both IoT and blockchain 
+in the reverse logistics process for clinical trials, impacts the entire CRO supply chain, 
+from the outgoing logistics to the incoming logistics processes. The additional steps in 
+the process shown in Fig. 2. are related to the agreement, or not, of the smart contract 
+between the CRO and the transporter that not only outlines the conditions of transpor-
+tation as in any contract but also covers and controls the relevant logistics activities 
+related to the temperature control and geo-localisation from using IoT devices, as well 
+as the management of the IoT devices themselves. Another notable impact is the deci-
+sion-making opportunity in the incoming logistics process coming from the information 
+from the IoT devices regarding the real-time temperature of the samples. This allows 
+the CRO to reschedule the planned treatment and reception of the sample if it is con-
+sidered expired, or to organise express shipment if the data indicates more rapid treat-
+ment is necessary. The terms of the Smart Contract also dictate and control the 
+
+
+Outgoing Logistics 
+
+
+Incoming Logistics 
+
+
+responsibilities and actions required by the parties in these instances. Additionally, all 
+documentation and communication within the logistics process is recorded in the “Hy-
+perLedger” blockchain to ensure not only the security of the information but the validity 
+of the data in case of any issues that occur during the transportation and logistics. 
+
+ 
+
+Fig. 2. Business Process Map of Reverse Logistics process for Clinical Trials integrating IoT 
+Devices and Blockchain 
+
+5 Conclusion 
+
+This paper proposes a new framework that integrates IoT and blockchain technology in 
+the reverse logistics supply chain for clinical trials. The novelty lies in the combination 
+
+
+of both IoT and blockchain in this unique context of contract research organisations 
+(CRO) specialising in organising and running clinical trials. The framework is imple-
+mented in a CRO in Switzerland and the resulting dynamic processes are presented and 
+discussed. 
+
+The most remarkable impacts on the CRO supply chain include the decision-making 
+opportunity based on the data originating from the IoT devices in the incoming reverse 
+logistics flow, as well as the integration of Smart Contracts which automatically exe-
+cute the code in the blockchain ledger when the conditions regarding IoT data is trig-
+gered in the contract. The digitalisation of the information flow derived from the com-
+bination of the IoT with the blockchain allows CRO to more efficiently manage the 
+material flows and internal processes pertaining to clinical trials. 
+
+On the other hand, clinical trials require a high level of confidentiality which is the 
+reason for using a private blockchain, HyperLedger, however it generates high usage 
+costs as each transaction is invoiced. The costly nature of using a private blockchain 
+may deter other CRO to consider such a framework. Consequently, a direction for fu-
+ture research may be to design an alternative process that reduces the number of trans-
+actions and cost. Another direction for future research is to appropriate the framework 
+in the pharmaceutical and medical devices industries which have comparable logistics 
+requirements to CRO. 
+
+6 Acknowledgements 
+
+This work was supported by the Swiss National Science Foundation under project n° 
+[176349]. 
+
+References 
+
+1. Tseng, J-H., Liao, Y-C., Chong, B., Liao, S-W.: Governance on the Drug Supply Chain via 
+Gcoin Blockchain. International Journal of Environmental Research and Public Health. 
+15(6), 1055-63 (2018). 
+2. HealthNautica, https://www.healthnautica.com/comppages/index.asp, last accessed 
+2021/3/15. 
+3. FACTOM - Introducing Honesty to Record-Keeping, https://bitcointalk.org/in-
+dex.php?topic=850070.0, last accessed 2021/3/15. 
+4. Gem | The Best Crypto Portfolio Tracker Does the Work for You, https://gem.co/, last ac-
+cessed 2021/3/15. 
+5. Tehrani, N., Jin, Y.: How Advances in the Internet of Things (Iot) Devices and Wearable 
+Technology Will Impact the Pharmaceutical Industry. RA Journal of Applied Research. 
+4(3), 1530–3 (2018). 
+6. Li, W., Chai, Y., Khan, F., Jan, S., Verma, S., Menon, VG., et al.: A Comprehensive Survey 
+on Machine Learning-Based Big Data Analytics for IoT-Enabled Smart Healthcare System. 
+Mobile Networks and Applications. 26(1), 234–52 (2021). 
+7. Singh, M., Katiyar, D., Singhal, S.: Blockchain technology in management of clinical trials: 
+A review of its applications, regulatory concerns and challenges. Materials Today: Proceed-
+ings. In press (2021). 
+
+
+
+8. Yuan, Y., Wang, F-Y.: Towards blockchain-based intelligent transportation systems. In: 
+IEEE 19th International Conference on Intelligent Transportation Systems (ITSC), pp. 
+2663–8, IEEE, Rio de Janeiro, Brazil (2016). 
+9. Hewa, T., Ylianttila, M., Liyanage, M.: Survey on blockchain based smart contracts: Appli-
+cations, opportunities and challenges. Journal of Network and Computer Applications. 
+177(1), 102857 (2021). 
+10. Imeri, A., Khadraoui, D.: The Security and Traceability of Shared Information in the Process 
+of Transportation of Dangerous Goods. In: 2018 9th IFIP International Conference on New 
+Technologies, Mobility and Security (NTMS). pp. 1–5, IEEE, Paris, France (2018). 
+11. Nasih, S., Arezki, S., Gadi, T.: Enhancement of supply chain management by integrating 
+Blockchain technology. In: 2019 1st International Conference on Smart Systems and Data 
+Science (ICSSD). pp. 1–2, IEEE, Rabat, Morocco (2019). 
+12. Merkaš, Z., Perkov, D., Bonin, V.: The Significance of Blockchain Technology in Digital 
+Transformation of Logistics and Transportation. International Journal of E-Services and 
+Mobile Applications. 12(1), 1–20 (2020). 
+13. Zheng, Z., Xie, S., Dai, H-N., Chen, W., Chen, X., Weng, J., Imran, M.: An overview on 
+smart contracts: Challenges, advances and platforms. Future Generation Computer Systems. 
+105(1), 475–91 (2020). 
+14. Alahmadi, A., Lin, X.: Towards Secure and Fair IIoT-Enabled Supply Chain Management 
+via Blockchain-Based Smart Contracts. In: ICC 2019 - 2019 IEEE International Conference 
+on Communications (ICC). pp. 1–7, IEEE, Shanghai, China (2019). 
+15. Jangir, S., Muzumdar, A., Jaiswal, A., Modi, CN., Chandel, S., Vyjayanthi, C.: A Novel 
+Framework for Pharmaceutical Supply Chain Management using Distributed Ledger and 
+Smart Contracts. In; 2019 10th International Conference on Computing, Communication 
+and Networking Technologies (ICCCNT). pp. 1–7, IEEE, Kanpur, India (2019). 
+16. Arumugam, SS., Umashankar, V., Narendra, NC., Badrinath, R., Mujumdar, AP., Holler, J., 
+Hernandez, A.: IOT Enabled Smart Logistics Using Smart Contracts. In: 2018 8th Interna-
+tional Conference on Logistics, Informatics and Service Sciences (LISS). pp. 1–6, IEEE, 
+Toronto, Canada (2018). 
+17. Salah, K., Nizamuddin, N., Jayaraman, R., Omar, M.: Blockchain-Based Soybean Tracea-
+bility in Agricultural Supply Chain. IEEE Access. 7(1), 73295–305 (2019). 
+18. Benchoufi, M., Ravaud, P.: Blockchain technology for improving clinical research quality. 
+Trials. 18(1), 335-40 (2017). 
+19. Shae, Z., Tsai, JJP.: On the Design of a Blockchain Platform for Clinical Trial and Precision 
+Medicine. In: 2017 IEEE 37th International Conference on Distributed Computing Systems 
+(ICDCS). pp. 1972–80, IEEE, Atlanta, USA (2017). 
+20. Angeletti, F., Chatzigiannakis, I., Vitaletti, A.: Towards an Architecture to Guarantee Both 
+Data Privacy and Utility in the First Phases of Digital Clinical Trials. in: Sensors. 18(12), 
+4175–202 (2018) 
+21. Maslove, DM., Klein, J., Brohman, K., Martin, P.: Using Blockchain Technology to Manage 
+Clinical Trials Data: A Proof-of-Concept Study. JMIR Medical Informatics. 6(4), e11949 
+(2018). 
+22. Benchoufi, M., Porcher, R., Ravaud, P.: Blockchain protocols in clinical trials: Transparency 
+and traceability of consent. F1000Res. 6(1), 66 (2017). 
+23. Khatoon, A.: A Blockchain-Based Smart Contract System for Healthcare Management. 
+Electronics. 9(1), 94-117 (2020). 
+
+
+ 
+
+

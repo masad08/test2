@@ -1,0 +1,134 @@
+Imprint logo
+Journal logo
+
+Unlabelled image
+
+J. Garay, A. Kiayias, N. Leonardos, The Bitcoin Backbone Protocol: Analysis and 
+Applications, Springer, Berlin, 2015, https://link.springer.com/chapter/ 
+10.1007/978-3-662-46803-6_10 
+
+S.B. Thorat, S.K. Banarjee, D.D. Gaikwad, S.L. Jadhav, R.M. Thorat, Clinical trial: 
+a review, International Journal of Pharmaceutical Sciences Review and 
+Research. (2010) 101–106 
+
+K.E. Peace, D.-G. Chen, Clinical Trial Methodology, CRC Press, Chapman & Hall/ 
+CRC Biostatistics Series, 2010 
+
+F. Angeletti, I. Chatzigiannakis, A. Vitaletti, The role of blockchain and IoT in 
+recruiting participants for digital clinical trials, 25th International Conference 
+on Software, Telecommunications and Computer Networks (SoftCOM), 2017 
+
+P. Schueler, B. Buckley, Re-Engineering Clinical Trials-Best Practices for 
+Streamlining the Development Process, Academic Press, New York, 2014, 
+https://www.elsevier.com/books/re-engineering-clinical-trials/schueler/978- 
+0-12-420246-7 
+
+
+Springer International Publishing, 2018, pp. 75–91.: http://link.springer.com/ 
+10.1007/978-3-319- 94478-4. 
+[37] J.C. Kvedar, A.L. Fogel, mHealth advances clinical research, bit by bit, Nat 
+Biotech. 35 (2017) 337–1334, https://doi.org/10.1038/nbt.3851. 
+[38] T.-T. Kuo, H.-E. Kim, L. Ohno-Machado, Blockchain distributed ledger 
+technologies for biomedical and health care applications, J. Am. Med. Inform. 
+Assoc. 24 (2017) 1211–1220, https://doi.org/10.1093/jamia/ocx068. 
+[39] T. Nugent, D. Upton, M.Cimpoesu,Improving data transparency in clinical trials 
+using blockchainsmart contracts, F1000Res.5 (2016) 2541. https://doi.org/ 
+10.12688/f1000research.9756.1. 
+[40] M. Benchoufi, R.Porcher, P.Ravaud, Blockchain protocols in clinical trials: 
+Transparency andtraceability of consent, F1000Res.6 (2017) 66. https://doi. 
+org/10.12688/f1000research.10531.5. 
+[41] A. Ekblaw, A. Azaria,MedRec: Medical Data Management on the Blockchain, 
+Viral Communications.(2016) 1-10. https://www.media.mit.edu/publications/ 
+medrec/. 
+[42] H. Kakavand, N. Kost De Sevres, B. Chilton, The blockchain revolution: an 
+analysis of regulation and technology related to distributed ledger 
+technologies, SSRN. 2017. https://doi.org/10.2139/ssrn.2849251 
+[43] P. Filippi, S. Hassan, Blockchain technology as a regulatory technology: from 
+code is law to law is code, First Monday. 21 (2016), https://doi.org/10.5210/fm. 
+v21i12.7113. 
+[44] Food and Drug Administration, Impact of Certain Provisions of the Revised 
+Common Rule on FDA-Regulated Clinical Investigations: Guidance for 
+Sponsors, Investigators, and Institutional Review Boards, Silver Spring, MD, 
+2018. https://www.regulations.gov/contentStreamer?documentId=FDA-2018- 
+D-3551-0001&attachmentNumber=1&contentType=pdf (Accessed 2 March 
+2021). 
+[45] Food and Drug Administration, Regulations: Good Clinical Practice and Clinical 
+Trials, 2018. https://www.fda.gov/science-research/clinical-trials-andhuman-
+subject-protection/regulations-good-clinicalpractice-and-clinicaltrials 
+(Accessed 2 March 2021) 
+[46] Food and Drug Administration, Use of Electronic Records and Electronic 
+Signatures in Clinical Investigations Under 21 CFR Part 11 - Questions and 
+Answers: Guidance for Industry (draft), Silver Spring, MD, 2017. https://www. 
+fda.gov/media/105557/download (Accessed 2 March 2021) 
+[47] AAHRPP, Tip Sheet 2: Determining Whether an Activity Is Research Involving 
+Human Participants, Washington, DC: Association for the Accreditation of 
+Human Research Protection Programs, Inc, 2017. https://admin.aahrpp.org/ 
+Website%20Documents/Tip_Sheet_2_Determining_Whether_an%20_Activity_ 
+is_Research_Involving_Human_Participants.PDF (Accessed 2 March 2021). 
+[48] Office for Civil Rights, Is a Software Vendor a Business Associate of a Covered 
+Entity? Washington, DC, 2002. https://www.hhs.gov/hipaa/forprofessionals/
+faq/256/is-software-vendor-business-associate/index.html 
+(Accessed 2 March 2021). 
+[50] S.M.C. Gibbons, J. Kaye, A. Smart, C. Heeney, M. Parker, Governing genetic 
+databases: challenges facing research regulation and practice, J.L. Soc. 34 
+(2007) 163–189, https://doi.org/10.1111/j.1467-6478.2007.00387.x. 
+[51] R.S. Dokholyan, L.H. Muhlbaier, J.M. Falletta, J.P. Jacobs, D. Shahian, C.K. Haan, 
+E.D. Peterson, Regulatory and ethical considerations for linking clinical and 
+administrative databases, Am. Heart J. 157 (2009) 971–982, https://doi.org/ 
+10.1016/j.ahj.2009.03.023. 
+[52] J. Pollak, HIPAA Questions and Answers Relating to Research Databases, 
+Baltimore, MD: Johns Hopkins Medicine, 2006. : https://www. 
+hopkinsmedicine.org/institutional_review_board/hipaa_ 
+research/faq_databases.html (Accessed 5 March 2021) 
+[53] Office for Civil Rights, Research, Washington, DC: Department of Health and 
+Human Services, 2017. Available online at: https://www.hhs.gov/ 
+hipaa/forprofessionals/special-topics/research/index.html (Accessed 5 March 
+2021) 
+[54] Office for Human Research Protections, Human Subject RegulationDecision 
+Charts, Rockville, MD, 2016. https://www.hhs.gov/ohrp/regulations-andpolicy/
+decision-charts/index.html (Accessed 5 March 2021). 
+
+[55] Office for Human Research Protections, Coded Private Information or 
+
+Specimens Use in Research, Guidance, Rockville, MD, 2008. Available online 
+at: https://www.hhs.gov/ohrp/regulations-and-policy/guidance/ 
+researchinvolving-coded-privateinformation/index.html (Accessed 5 March 
+2021). 
+[56] M. Benchoufi, P. Ravaud, Blockchain technology for improving clinical research 
+quality, Trials 18 (2017) 335, https://doi.org/10.1186/s13063-017-2035-z. 
+[57] National Institutes of Health, Notice of Changes to NIH Policy for Issuing 
+Certificates of Confidentiality. Bethesda, MD, 2017. https://grants. 
+nih.gov/grants/guide/notice-files/NOT-OD-17-109.html (Accessed 5 March 
+2021). 
+[58] Office for Civil Rights, How Do HIPAA Authorizations Apply to an Electronic 
+Health Information Exchange Environment? Washington, DC, 2008. https:// 
+www.hhs.gov/hipaa/for-professionals/faq/554/how-do-hipaa-authorizationsapply-
+to-electronic-health-information/index.html (Accessed 5 March 2021). 
+[59] National Institutes of Health, Common Data Element (CDE) Resource Portal, 
+Bethesda, National Library of Medicine, MD, 2019, https://www.nlm.nih.gov/ 
+cde/ (Accessed 5 March 2021) 
+
+Food and Drug Administration, Providing Regulatory Submissions in 
+Electronic Format-Standardized Study Data: Guidance for Industry, Silver 
+Spring, MD, 2014, https://www.fda.gov/media/82716/download (Accessed 7 
+March 2021) 
+
+Food and Drug Administration, Electronic Source Data in Clinical 
+Investigations, Silver Spring, MD, 2013, https://www.fda.gov/media/ 
+85183/download (Accessed 7 March 2021) 
+
+Food and Drug Administration, IRB Waiver or Alteration of Informed Consent 
+for Clinical Investigations Involving No More Than Minimal Risk to Human 
+Subjects: Guidance for Sponsors, Investigators, and Institutional Review 
+Boards, Silver Spring, MD, 2017, https://www.fda.gov/regulatoryinformation/
+search-fda-guidance-documents/irb-waiveror-alterationinformed-
+consent-clinical-investigations-involving-no-moreminimal-risk 
+(Accessed 7 March 2021) 
+
+A.M. Tang, M. Jian, Deep Learning Applications for Cyber Security, Springer, 
+Berlin, 2019 
+
+J.H. Hartman, I. Murdock, T. Spalink, The Swarm scalable storage system, In: 
+19th IEEE International Conference on Distributed Computing Systems, 1999 
+
+
